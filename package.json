@@ -1,0 +1,22 @@
+{
+  "name": "sddsrs",
+  "version": "1.0.0",
+  "description": "Software Engineering Project: A website developed to help people who arrive at Sao Carlos manage their money",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BarbaraCortes/sddsRS.git"
+  },
+  "author": "Ana Baptistao, Barbara Cortes, Giovanna Craveiro, Lucas Turci, Marina Kako",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BarbaraCortes/sddsRS/issues"
+  },
+  "homepage": "https://github.com/BarbaraCortes/sddsRS#readme",
+  "dependencies": {
+    "express": "^4.16.3"
+  }
+}
