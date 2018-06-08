@@ -1,0 +1,913 @@
+.legenda {
+	font-family: arial,helvetica,clean,sans-serif;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+}
+.contagem1 {
+	font-family: calibri, georgia, arial, serif;
+	font-size: 25px;
+	font-style: normal;
+	font-weight: bold;
+	text-indent: 10px;
+	font-variant: normal;
+	color: #000000;
+}
+.contagem2 {
+	font-family: calibri, georgia, arial, serif;
+	font-size: 45px;
+	font-style: normal;
+	font-weight: bold;
+	text-indent: 10px;
+	font-variant: normal;
+	color: #FF0000;
+}
+.titulo {
+	font-family: "Copperplate Gothic Bold";
+	font-size: 24px;
+	font-style: normal;
+	font-weight: normal;
+	text-align: left;
+	vertical-align: top;
+	padding-left: 10px;
+	color: #3333FF;
+	width: auto;
+	display: block;
+}
+.titulo2 {
+    
+	font-family: "Copperplate Gothic Bold";
+	font-size: 18px;
+	font-style: normal;
+	font-weight: normal;
+	text-align: left;
+	vertical-align: top;
+	padding-left: 10px;
+	color:#FFFFFF; 
+	width: auto;
+	display: block;
+}
+
+.subtitulo{
+	font-family: Constantia, Calibri, "Times New Roman";
+	font-size: 18px;
+	font-style: normal;
+	font-weight: normal;
+	text-indent: 10px;
+	font-variant: normal;
+	color: #006600;
+}
+.subtitulo2 {
+	font-family: Constantia, Calibri, "Times New Roman";
+	font-size: 18px;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	color: #006600;
+}
+.opcoes_menu {
+	font-family: Calibri,arial,helvetica,clean,sans-serif;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+}
+.data {
+font-family:"Segoe UI Light";
+	font-size: 13px;
+	font-style: italic;
+	font-weight: normal;
+	background-color:#333;
+	border-radius: 3px;
+	padding: 5px;
+	width: 300px;
+	height: 40px;
+	vertical-align:middle;
+	
+}
+.noticia1a {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: bold;
+	text-decoration: none;
+	color: #000066;
+}
+.noticia1b {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-style: normal;
+	font-weight: normal;
+	text-decoration: none;
+	text-indent: 10px;	
+	color: #3333FF;
+}
+.noticia2a {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: bold;
+	text-decoration: none;
+	color: #006600;
+}
+.noticia2b {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-style: normal;
+	font-weight: normal;
+	text-decoration: none;
+	text-indent: 10px;	
+	color: #339900;
+}
+.menu {
+	font-family: calibri, Arial;
+	font-size: 14px;
+	font-style: normal;
+	text-decoration: underline;
+	display: block;
+	padding-left: 2px;
+	padding-top: 3px;
+	width: 200px;
+	font-weight: bold;
+	color: #FFFFFF;
+	height: 20px;
+	vertical-align: middle;
+	background-color: #005691;
+	border: thin solid #FFFFFF;
+	cursor: default;
+	text-align: left;
+}
+.menu:hover {
+	font-family: calibri, arial, helvetica, clean, sans-serif;
+	font-size: 14px;
+	font-style: normal;
+	text-decoration: underline;
+	display: block;
+	padding-left: 2px;
+	padding-top: 3px;
+	width: 200px;
+	font-weight: bold;
+	color: #FFFFFF;
+	height: 20px;
+	vertical-align: middle;
+	background-color: #000000;
+	border: thin solid #FFFFFF;
+	cursor: hand;
+	text-align: left;
+
+}
+.menu_estatico {
+ font: "Segoe UI Light";
+	display: block;
+	padding-left: 2px;
+	padding-top: 3px;
+	width: 200px;
+	font-weight: bold;
+	color: #000;
+	height: 20px;
+	vertical-align: middle;
+	background: linear-gradient(to right, #333 0%, #444 50%, #666 100%) ;
+	cursor: default;
+	text-align: center;
+	border-radius: 5px;
+}
+.menu_estatico:hover {
+ font: "Segoe UI Light";
+	display: block;
+	padding-left: 2px;
+	padding-top: 3px;
+	width: 200px;
+	font-weight: bold;
+	color: #000;
+	height: 20px;
+	vertical-align: middle;
+	background: linear-gradient(to left, #333 0%, #444 50%, #666 100%) ;
+	cursor: default;
+	text-align: center;
+	border-radius: 5px;
+}
+.submenu {
+  font-family: 'Oswald', sans-serif;
+	font-size: 13px;
+	font-style: normal;
+	font-weight: normal;
+	text-decoration: none;
+	height: auto;
+	padding-left: 10px;
+	
+	display: block;
+	padding-top: 1px;
+	padding-bottom: 1px;
+	vertical-align: middle;
+	cursor: default;
+	color: #000000;
+	text-align: center;
+}
+.submenu:hover {
+
+	font-size: 13px;
+	font-style: normal;
+	font-weight: normal;
+	text-decoration: none;
+	height: auto;
+	padding-left: 10px;
+	
+	display: block;
+	padding-top: 1px;
+	padding-bottom: 1px;
+	vertical-align: middle;
+	color: #FFFFFF;
+	cursor: hand;
+	text-align: center;
+}.submenu_2 {
+    font: "Segoe UI Light";
+	font-size: 12px;
+	font-style: normal;
+	font-weight: normal;
+	text-decoration: none;
+	height: auto;
+	padding-left: 10px;
+	display: block;
+	padding-top: 1px;
+	padding-bottom: 1px;
+	vertical-align: middle;
+	cursor: default;
+	color: #FFF;
+	text-align: center;
+}
+.submenu_2:hover {
+font: "Segoe UI Light";
+	font-size: 12px;
+	font-style: normal;
+	font-weight: bolder;
+	text-decoration: none;
+	height: auto;
+	padding-left: 10px;
+	display: block;
+	padding-top: 1px;
+	padding-bottom: 1px;
+	vertical-align: middle;
+	color: #FFF;
+	cursor: hand;
+	text-align: center;
+}
+.menu-1 {
+font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 13px;
+	font-style: none;
+	font-weight: 300;
+	text-decoration: none;
+	height: auto;
+	display: block;
+	padding-top: 1px;
+	padding-bottom: 1px;
+	vertical-align: middle;
+	text-align: center;	
+	
+}
+.menu-2 {
+font: "Segoe UI Light";
+	font-size: 12px;
+	font-style: normal;
+	font-weight: normal;
+	text-decoration: none;
+	height: auto;
+	display: block;
+	padding-top: 1px;
+	padding-bottom: 1px;
+	vertical-align: middle;
+	cursor:default;
+	text-align: center;
+	color:#FFF;
+}
+.titulo_geral {
+	font-family:"bradley Hand ITC";
+	color:#FFFFFF; 
+	font-style: normal;
+	font-weight: normal;
+	font-size: 38px;
+	vertical-align: middle;
+	padding-top: 10px;
+	text-align: center;
+	display: block;
+	width: auto;
+}
+.imagem_geral {
+    background: center #333;
+	border-radius: 2px;
+	padding: 7px;
+	
+}
+.moldura_imagem {
+ background: center #222;
+ border-radius: 5px;
+ padding: 7px;
+ 
+}
+.moldura_imagem2 {
+ background: center #111;
+ padding: 4px;
+}
+.foto_geral {
+    background: center #333;
+	border-radius: 2px;
+	padding: 2px;
+	
+}
+.moldura_foto {
+ background: center #222;
+ border-radius: 5px;
+ padding: 3px;
+ 
+}
+.moldura_foto2 {
+
+ background: center #111;
+ padding: 4px;
+}
+.background_text {
+    background: center #111;
+	border-radius: 2px;
+	padding: 7px;
+}
+.moldura_text {
+ 	background:  center #FFF;
+ 	border-radius: 3px;
+ 	padding: 3px;
+}
+.titulo_regulamento {
+    font-family:"Copperplate Gothic Bold";
+	color:#FFFFFF; 
+	font-style: normal;
+	font-weight: normal;
+	font-size: 24px;
+	vertical-align: middle;
+	padding: 10px;
+	text-align:center;
+	display: block;
+	width: auto;
+}
+.titulo_regulamento2 {
+    font-family:"Copperplate Gothic Bold";
+	color:#FFF; 
+	font-style:oblique;
+	font-weight: normal;
+	font-size: 14px;
+	vertical-align: middle;
+	padding-left: 10px;
+	text-align:left;
+	display: block;
+	width: auto;
+}
+.background_text2 {
+    background: center #111;
+	border-radius: 5px;
+	padding: 7px;
+}
+.moldura_text2 {
+ 	background:  center #777;
+ 	border-radius: 3px;
+ 	padding: 5px;
+}
+.moldura_text3 {
+ 	background:  center #FFF;
+ 	border-radius: 1px;
+ 	padding: 3px;
+}
+.titulo_parceiros {
+font-family:"Segoe UI Light";
+	color:#FFFFFF; 
+	font-style: normal;
+	font-weight: normal;
+	font-size: 38px;
+	vertical-align: middle;
+	padding-top: 10px;
+	text-align: center;
+	display: block;
+	width: auto;
+}
+.texto_parceiros {
+	font-family: arial,helvetica,clean,sans-serif;
+	font-size: 13px;
+	font-style: normal;
+	font-weight: normal;
+	text-indent: 10px;
+	font-variant: normal;
+	color:#FFFFFF;
+	vertical-align: middle;
+	text-align:justify;
+	
+	}
+	.background_parceiros{
+    background: center #FFF;
+	border-radius: 5px;
+	padding: 7px;
+}
+.moldura_parceiros {
+ 	background:  center #777;
+ 	border-radius: 3px;
+ 	padding: 5px;
+	}
+	.texto_countdown {
+	font-family:"Agency FB";
+	font-size: 16px;
+	font-style: normal;
+	font-weight: normal;
+	text-indent: 10px;
+	font-variant: normal;
+	color:#FFFFFF;
+	vertical-align: middle;
+	text-align:center;
+	
+	
+	}
+	.subtitulo_titulos{
+	font-family: "Times New Roman";
+	font-size: 18px;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	color: #FFFF00;
+	background:#111;
+	border-radius: 5px;
+	}
+	.texto_tabela {
+	font-family: "Times New Roman";
+	font-size: 13px;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-decoration:none;
+	color:#FFFFFF;
+	vertical-align:middle;
+}
+.imagem_tabela {
+    background: center #333;
+	border-radius: 2px;
+	padding: 7px;
+	width: 587px;
+	
+}
+.moldura_tabela {
+ background: center #222;
+ border-radius: 5px;
+ padding: 7px;
+width: 600px;
+}
+.moldura_tabela2 {
+
+
+ background: center #111;
+ padding: 4px;
+ width: 615px;
+}
+	
+	.titulo_tabela {
+    
+	font-family: "Segoe UI Light";
+	font-size: 20px;
+	font-style: normal;
+	font-weight: bold;
+	text-align: left;
+	vertical-align: top;
+	padding-left: 10px;
+	color:#FFFFFF; 
+	width: auto;
+	display: block;
+}
+.subtitulo_projetos {
+	font-family:"bradley Hand ITC";
+	color:#FFFFFF; 
+	font-style: normal;
+	font-weight: normal;
+	font-size: 24px;
+	vertical-align: top;
+	padding-top: 10px;
+	text-align: center;
+	display: block;
+	width: auto;
+}
+.texto {
+	font-family: arial,helvetica,clean,sans-serif;
+	font-size: 13px;
+	font-style: normal;
+	font-weight: normal;
+	text-indent: 10px;
+	font-variant: normal;
+	color:#FFFFFF;
+	vertical-align: top;
+	}
+	.texto_membro {
+	font-family: arial,helvetica,clean,sans-serif;
+	font-size: 13px;
+	font-style: normal;
+	font-weight: normal;
+	text-indent: 10px;
+	font-variant: normal;
+	color:#FFFFFF;
+	vertical-align: top;
+	padding-right: 10px;
+	}
+	.texto_membro2 {
+	font-family: arial,helvetica,clean,sans-serif;
+	font-size: 13px;
+	font-style: normal;
+	font-weight: normal;
+	text-indent: 10px;
+	font-variant: normal;
+	color:#000;
+	vertical-align: top;
+	padding-right: 10px;
+	}
+.subtitulo_membros {
+	font-family:"bradley Hand ITC";
+	color:#FFFFFF; 
+	
+	font-size: 18px;
+	
+}
+#capa {
+	background-image:url(../conteudo/fotos/capanova.png);
+	background-attachment:scroll;
+	background-repeat: no-repeat;
+	position:fixed;
+}
+/*---- DropDown---*/
+.drop2{
+font:"Segoe UI Light";
+    margin: 0 auto;
+    text-align: center;
+	background-color:#FFF;
+	border-radius: 10px;
+}
+
+#nav {
+    background-color: #000;
+	z-index: 125;
+	 
+}
+#nav_wrapper {
+font:"Segoe UI Light";
+    width: 1339px;
+    margin: 0 auto;
+    text-align: center;
+	
+
+	
+}
+#nav_wrapper2 {
+font:"Segoe UI Light";
+font-size:12px;
+    width: 150px;
+    margin: 0 auto;
+    text-align: center;
+	}
+#nav ul {
+    list-style-type: none;
+    padding-left: 5px;
+	padding-right: 5px;
+	padding-bottom: 2.5px;
+	padding-top: 2.5px;
+    margin: 0;
+    position: center;
+    min-width: 40px;
+}
+
+#nav ul li {
+    display: inline-block;
+	z-index: 125;
+	 background: #111;
+  background: -moz-linear-gradient(top, #111 0%, #333 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #111), color-stop(100%, #333));
+  background: -webkit-linear-gradient(top, #111 0%, #333 100%);
+  background: -o-linear-gradient(top, #111 0%, #333 100%);
+  background: -ms-linear-gradient(top, #111 0%, #333 100%);
+  background: linear-gradient(top, #111 0%, #333 100%);
+	border-radius: 5px;
+	
+	
+}
+
+#nav ul li:hover {
+
+	z-index: 125;
+}
+#nav ul li a, visited {
+   
+    color: #CCC;
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+	z-index: 125;
+	cursor: pointer;
+}
+#nav ul li:hover ul {
+
+    display: block;
+	z-index: 125;
+}
+#nav ul ul {
+    display: none;
+    position: absolute;
+    background-color: #111;
+    border: 5px solid #000;
+    border-top: 0;
+    margin-left: -5px;
+	z-index: 125;
+}
+#nav ul ul li {
+    display: block;
+	z-index: 125;
+}
+#nav ul ul li a:hover {
+
+/*------webkit-box-shadow: 5px 5px 46px -1px rgba(255,255,255,0.8);
+-moz-box-shadow: 5px 5px 46px -1px rgba(255,255,255,0.8);
+box-shadow: 5px 5px 46px -1px rgba(255,255,255,0.8);  ---*/
+  background: -moz-linear-gradient(top, #333 0%, #555 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #333), color-stop(100%, #555));
+  background: -webkit-linear-gradient(top, #333 0%, #555 100%);
+  background: -o-linear-gradient(top, #333 0%, #555 100%);
+  background: -ms-linear-gradient(top, #333 0%, #555 100%);
+  background: linear-gradient(top, #333 0%, #555 100%);
+	border-radius: 5px;
+border-radius: 2px;
+	z-index: 125;
+}
+
+
+/*---- DropDown com Gradiente -*/
+#cssmenu,
+#cssmenu ul,
+#cssmenu li,
+#cssmenu a {
+  border: none;
+  line-height: 1;
+  margin: 0;
+  padding: 0;
+  
+}
+#cssmenu {
+  height: 37px;
+  display: block;
+  border-radius: 5px;
+  width: auto;
+  margin: 0;
+  padding: 0;
+}
+#cssmenu > ul {
+  list-style: inside none;
+  margin: 0;
+  padding: 0;
+}
+#cssmenu > ul > li {
+  list-style: inside none;
+  float: center;
+  display: inline-block;
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+#cssmenu.align-center > ul {
+  text-align: center;
+}
+#cssmenu.align-center > ul > li {
+  float: none;
+
+}
+#cssmenu.align-center ul ul {
+  text-align: left;
+}
+#cssmenu.align-center > ul > li:first-child > a {
+  border-radius: 0;
+}
+#cssmenu > ul > li > a {
+  outline: none;
+  display: block;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.4);
+  font-weight: 700;
+  font-size: 13px;
+  font:"Segoe UI Light";
+  color: #ffffff;
+  padding: 12px 18px;
+}
+#cssmenu > ul > li:first-child > a {
+  border-radius: 5px;
+  }
+  
+#cssmenu > ul > li > a:after {
+  position: absolute;
+  top: -1px;
+  bottom: -1px;
+  right: -2px;
+  z-index: 99;
+}
+#cssmenu ul li.has-sub:hover > a:after {
+  top: 0;
+  bottom: 0;
+}
+#cssmenu > ul > li.has-sub > a:before {
+  position: absolute;
+  top: 18px;
+  right: 6px;
+  border: 5px solid transparent;
+  border-top: 5px solid #ffffff;
+}
+#cssmenu > ul > li.has-sub:hover > a:before {
+  top: 19px;
+}
+#cssmenu > ul > li.has-sub:hover > a {
+  padding-bottom: 14px;
+  z-index: 999;
+  border-color: #3f3f3f;
+}
+#cssmenu ul li.has-sub:hover > ul,
+#cssmenu ul li.has-sub:hover > div {
+  display: block;
+}
+#cssmenu > ul > li.has-sub > a:hover,
+#cssmenu > ul > li.has-sub:hover > a {
+  background: #3f3f3f;
+  border-color: #3f3f3f;
+}
+#cssmenu ul li > ul,
+#cssmenu ul li > div {
+  display: none;
+  width: auto;
+  position: absolute;
+  top: 36px;
+  background: #3f3f3f;
+  border-radius: 5px 5px 5px 5px;
+  z-index: 999;
+  padding: 10px 0;
+}
+#cssmenu ul li > ul {
+  width: auto;
+  position: absolute;
+}
+#cssmenu ul ul ul {
+  position: absolute;
+}
+#cssmenu ul ul li:hover > ul {
+  left: 100%;
+  top: -10px;
+  border-radius: 5px;
+}
+#cssmenu ul li > ul li {
+  display: block;
+  list-style: inside none;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  width: auto;
+}
+#cssmenu ul li > ul li a {
+  outline: none;
+  display: block;
+  position: relative;
+  font: 10pt "Segoe UI Light";
+  color: #ffffff;
+  text-decoration: none;
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.5);
+  margin: 0;
+  padding: 8px 20px;
+}
+#cssmenu,
+#cssmenu ul ul > li:hover > a,
+#cssmenu ul ul li a:hover {
+  background: #3c3c3c;
+  background: -moz-linear-gradient(top, #3c3c3c 0%, #222222 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #3c3c3c), color-stop(100%, #222222));
+  background: -webkit-linear-gradient(top, #3c3c3c 0%, #222222 100%);
+  background: -o-linear-gradient(top, #3c3c3c 0%, #222222 100%);
+  background: -ms-linear-gradient(top, #3c3c3c 0%, #222222 100%);
+  background: linear-gradient(top, #3c3c3c 0%, #222222 100%);
+}
+#cssmenu > ul > li > a:hover {
+  background: #080808;
+  color: #ffffff;
+}
+#cssmenu ul ul a:hover {
+  color: #ffffff;
+}
+#cssmenu > ul > li.has-sub > a:hover:before {
+  border: 5px solid #ffffff;
+}
+
+
+
+/*----- ids do visualizador de imagens do index*/
+.page
+{
+	width: 1330px; /* escolhe tamanho da página*/
+	
+}
+
+.carousel-outer
+{
+	width: 100%;
+	overflow: hidden;
+	position: relative;
+}
+
+.left-transparent, .right-transparent, .carousel-inner
+{
+	float: left;
+}
+
+.left-transparent, .right-transparent
+{
+	width: 20%;
+	position: absolute;
+	z-index: 50;
+	opacity: 0.85;
+	background-color: black;
+}
+
+.left-transparent
+{
+	left: 0px;
+}
+
+.right-transparent
+{
+	right:0px;
+}
+
+.carousel-inner
+{
+	margin-left: 20%;
+	overflow: visible;
+	z-index: 25;
+	position: relative;
+	min-height: 20px;
+}
+
+
+.carousel-inner .carousel-item
+{
+	float: left;
+	display: inline-block;
+	z-index: 10;
+}
+
+.wrapper
+{
+	position: absolute;
+}
+
+.carousel-inner>a
+{
+	position: absolute;
+	display: inline-block;
+}
+
+.carousel-inner .left-link
+{
+	left: 0px;
+	z-index: 15;
+}
+
+.carousel-inner .right-link
+{
+	right: 0px;
+	z-index: 16;
+}
+
+.scroll-buttons
+{
+	z-index: 110;
+	position: absolute;
+	bottom: 0px;
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+	opacity: 0.5;
+}
+
+.scroll-buttons li
+{
+	float: left;
+	width: 20px;
+	height: 20px;
+	border-radius: 3px;
+	border: 1px solid white;
+	text-align: center;
+	margin: 0px 10px;
+}
+
+.scroll-buttons li:hover
+{
+	cursor: pointer;
+	background-color: #000;
+	color: #000;
+}
+
+.activeLink
+{
+	background-color: #000000;
+}

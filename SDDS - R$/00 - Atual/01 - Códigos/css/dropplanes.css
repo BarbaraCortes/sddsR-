@@ -1,0 +1,37 @@
+/* CSS Document */
+/* drop planes */
+#bravo {
+
+z-index: 1;
+cursor:pointer;
+}
+#bravo:hover{
+z-index:10;
+}
+#mike {
+
+
+z-index: 2;
+cursor:pointer;
+}
+#mike:hover{
+z-index:10;
+}
+#alpha {
+
+
+z-index: 3;
+cursor:pointer;
+}
+#alpha:hover{
+z-index:10;
+}
+#micro {
+
+
+z-index: 2;
+cursor:pointer;
+}
+#micro:hover{
+z-index:10;
+}
