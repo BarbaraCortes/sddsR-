@@ -1,5 +1,7 @@
-var app = require('express')(); // criacao do aplicativo
-
+var express = require('express'); // criacao do aplicativo
+app = express();
+var publicDir = require('path').join(__dirname,'/public');
+app.use(express.static(publicDir))
 /* Configuracoes iniciais */
 app.set("view engine", "ejs"); // fala que esta usando ejs como motor de views
 app.set("views", "./app/views"); // fala que as views (os arquivos ejs) estao no diretorio ./app/views
