@@ -16,3 +16,7 @@ app.listen(3000, function() {
 app.get('/', function(req, res) {
 	res.render('index');
 });
+
+app.get('/dicas', function(req, res) {
+	res.render('dicas');
+});
