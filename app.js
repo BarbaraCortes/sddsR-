@@ -17,10 +17,7 @@ app.get('/', function(req, res) {
 	res.render('index');
 });
 
+
 app.get('/dicas', function(req, res) {
 	res.render('dicas');
-});
-
-app.get('/bolsasauxilio', function(req, res) {
-	res.render('bolsasauxilio');
 });
