@@ -54,125 +54,132 @@
 		<title> Dicas </title>
 	</head>
 	<body>
-			<%-include navbar.ejs%>
-			<div id="img" style = "width: 100%;">
-				<img src="a.jpg" style = "max-width: 100%; height: auto;" class = "img-cartaopostal">
+		<%-include navbar.ejs%>
+		<div id="img" style = "width: 100%;">
+			<img src="a.jpg" style = "max-width: 100%; height: auto;" class = "img-cartaopostal">
+		</div>
+		<!-- Sessao de icones -->
+		<div class = "container">
+			<br>
+			<div class="row">
+				<div class = "col-md-4">
+					<center>
+						<a href="#aplicativos"><img src="like.png" style = "max-width: 33%; height: auto; margin: 20px" class = "img-logo"></a>
+					</center>
+					<br>
+					<h3 style="text-align: center"> Aplicativos </h3>
+				</div>
+				<div class = "col-md-4">
+					<center> 
+						<a href = "#videos"><img src="youtube.png" style = "max-width: 33%; height: auto; margin: 20px" class = "img-logo"></a>
+					</center>
+					<br>
+					<h3 style="text-align: center"> Vídeos </h3>
+				</div>
+				<div class = "col-md-4">
+					<center> 
+						<img src="restaurante.png" style = "max-width: 33%; height: auto; margin: 20px" class = "img-logo">
+					</center>
+					<br>
+					<h3 style="text-align: center"> Restaurantes </h3>
+				</div>
+			</div>	
+		</div>
+		<br>
+
+		<!-- Sessao de aplicativos -->
+		<div class = "container-fluid" style="background: #FFFFFF">
+			<h3 style = "margin-left: 100px"> Aplicativos </h3>
+			<div class="slides" id = "beblue" style = "width: 100%">
+				<div class = "col-md-3">
+					<center> 
+						<img src="beblue.png" style = "max-width: 33%; height: auto; margin: 20px;">
+					</center>
+					<h4 style = "color: blue; text-align: center"><a href = "https://www.beblue.com.br/">Beblue</a></h4>
+				</div>
+				<div class = "col-md-3">
+					<h4 style = "margin: 10px; margin-top: 40px"> O Beblue é um aplicativo de cashback, isso significa que você pode pagar a conta em restaurantes selecionados através dele e receber dinheiro de volta para futuras compras!</h4>
+				</div>
+				<div class = "col-md-3">
+					<a href='https://play.google.com/store/apps/details?id=br.com.beblue&hl=pt_BR&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img alt='Disponível no Google Play' src='https://play.google.com/intl/en_us/badges/images/generic/pt-br_badge_web_generic.png' style = "width: 60%;position:absolute;
+						left:25%;
+						margin-top:35px;"/></a>
+				</div>
+				<div class = "col-md-3">
+					<a href='https://itunes.apple.com/br/app/beblue-seu-dinheiro-de-volta/id1033201079?mt=8'><img src = "apple.svg" style = "width: 50%; position:absolute;
+						left:25%;
+						margin-top:50px;"></a>
+				</div>
 			</div>
-			<!-- Sessao de icones -->
-			<div class = "container">
-				<br>
-				<div class="row">
-					<div class = "col-md-4">
-						<center>
-							<a href="#aplicativos"><img src="like.png" style = "max-width: 33%; height: auto; margin: 20px" class = "img-logo"></a>
-						</center>
-						<br>
-						<h3 style="text-align: center"> Aplicativos </h3>
-					</div>
-					<div class = "col-md-4">
-						<center> 
-							<a href = "#videos"><img src="youtube.png" style = "max-width: 33%; height: auto; margin: 20px" class = "img-logo"></a>
-						</center>
-						<br>
-						<h3 style="text-align: center"> Vídeos </h3>
-					</div>
-					<div class = "col-md-4">
-						<center> 
-							<img src="restaurante.png" style = "max-width: 33%; height: auto; margin: 20px" class = "img-logo">
-						</center>
-						<br>
-						<h3 style="text-align: center"> Restaurantes </h3>
-					</div>
-				</div>	
+			<div class="slides" id = "splitwise" style = "width: 100%">
+				<div class = "col-md-3">
+					<center> 
+						<img src="splitwise.png" style = "max-width: 33%; height: auto; margin: 20px;">
+					</center>
+					<h4 style = "color: blue; text-align: center"><a href = "https://www.beblue.com.br/">Beblue</a></h4>
+				</div>
+				<div class = "col-md-3">
+					<h4 style = "margin: 10px; margin-top: 40px"> O Splitwise a kako explica depois oq eh</h4>
+				</div>
+				<div class = "col-md-3">
+					<a href='https://play.google.com/store/apps/details?id=br.com.beblue&hl=pt_BR&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img alt='Disponível no Google Play' src='https://play.google.com/intl/en_us/badges/images/generic/pt-br_badge_web_generic.png' style = "width: 60%;position:absolute;
+						left:25%;
+						margin-top:35px;"/></a>
+				</div>
+				<div class = "col-md-3">
+					<a href='https://itunes.apple.com/br/app/beblue-seu-dinheiro-de-volta/id1033201079?mt=8'><img src = "apple.svg" style = "width: 50%; position:absolute;
+						left:25%;
+						margin-top:50px;"></a>
+				</div>
+			</div>
+
+			<div class = "leftArrow">
+			  	<a onclick="plusSlides(-1)">
+				    <img name="left arrow"
+				    	src="leftarrow.jpeg"
+				     	alt="leftArrow"
+				     	align="middle"
+				     	style = "width: 50px; height: auto">
+			  	</a>
+			</div>
+
+			<div class = "rightArrow">
+				<a onclick="plusSlides(1)">
+					<img name="right arrow"
+						src="rightarrow.jpeg"
+						alt="rightArrow"
+						align="middle"
+						style = "width: 50px; height: auto">
+				</a>
+			</div>
+
+			<br>
+		</div>
+		<!-- Sessao de videos -->
+		<div class = "container-fluid" style="background: #DDDDDD; width:100%">
+			<br>
+			<h3 style = "margin-left: 100px"> Vídeos </h3>
+			<div class="row" id="videos">
+				<div class = "col-md-4">
+					<center>
+						<iframe width="400" height="250" src="https://www.youtube.com/embed/N8hc61EbBMM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen style = "margin: 20px"></iframe>
+					</center>
+				</div>
+				<div class = "col-md-4">
+					<center>
+						<iframe width="400" height="250" src="https://www.youtube.com/embed/bCGIB79uOOU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen style = "margin: 20px"></iframe>
+					</center>
+				</div>
+				<div class = "cold-md-4">
+					<center>
+						<iframe width="400" height="250" src="https://www.youtube.com/embed/wNT9f3gufPw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen style = "margin: 20px"></iframe>
+					</center>
+				</div>
 			</div>
 			<br>
+		</div>
 
-			<!-- Sessao de aplicativos -->
-			<div class = "container-fluid" style="background: #FFFFFF">
-				<h3 style = "margin-left: 100px"> Aplicativos </h3>
-				<div class="slides" id = "beblue" style = "width: 100%">
-					<div class = "col-md-3">
-						<center> 
-							<img src="beblue.png" style = "max-width: 33%; height: auto; margin: 20px;">
-						</center>
-						<h4 style = "color: blue; text-align: center"><a href = "https://www.beblue.com.br/">Beblue</a></h4>
-					</div>
-					<div class = "col-md-3">
-						<h4 style = "margin: 10px; margin-top: 40px"> O Beblue é um aplicativo de cashback, isso significa que você pode pagar a conta em restaurantes selecionados através dele e receber dinheiro de volta para futuras compras!</h4>
-					</div>
-					<div class = "col-md-3">
-						<a href='https://play.google.com/store/apps/details?id=br.com.beblue&hl=pt_BR&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img alt='Disponível no Google Play' src='https://play.google.com/intl/en_us/badges/images/generic/pt-br_badge_web_generic.png' style = "width: 60%;position:absolute;
-    						left:25%;
-    						margin-top:35px;"/></a>
-					</div>
-					<div class = "col-md-3">
-						<a href='https://itunes.apple.com/br/app/beblue-seu-dinheiro-de-volta/id1033201079?mt=8'><img src = "apple.svg" style = "width: 50%; position:absolute;
-    						left:25%;
-    						margin-top:50px;"></a>
-					</div>
-				</div>
-				<div class="slides" id = "splitwise" style = "width: 100%">
-					<div class = "col-md-3">
-						<center> 
-							<img src="splitwise.png" style = "max-width: 33%; height: auto; margin: 20px;">
-						</center>
-						<h4 style = "color: blue; text-align: center"><a href = "https://www.beblue.com.br/">Beblue</a></h4>
-					</div>
-					<div class = "col-md-3">
-						<h4 style = "margin: 10px; margin-top: 40px"> O Splitwise a kako explica depois oq eh</h4>
-					</div>
-					<div class = "col-md-3">
-						<a href='https://play.google.com/store/apps/details?id=br.com.beblue&hl=pt_BR&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img alt='Disponível no Google Play' src='https://play.google.com/intl/en_us/badges/images/generic/pt-br_badge_web_generic.png' style = "width: 60%;position:absolute;
-    						left:25%;
-    						margin-top:35px;"/></a>
-					</div>
-					<div class = "col-md-3">
-						<a href='https://itunes.apple.com/br/app/beblue-seu-dinheiro-de-volta/id1033201079?mt=8'><img src = "apple.svg" style = "width: 50%; position:absolute;
-    						left:25%;
-    						margin-top:50px;"></a>
-					</div>
-				</div>
-
-				<div class = "leftArrow">
-				  	<a onclick="plusSlides(-1)">
-					    <img name="left arrow"
-					    	src="leftarrow.jpeg"
-					     	alt="leftArrow"
-					     	align="middle"
-					     	style = "width: 50px; height: auto">
-				  	</a>
-				</div>
-
-				<div class = "rightArrow">
-					<a onclick="plusSlides(1)">
-						<img name="right arrow"
-							src="rightarrow.jpeg"
-							alt="rightArrow"
-							align="middle"
-							style = "width: 50px; height: auto">
-					</a>
-				</div>
-
-				<br>
-			</div>
-			<!-- Sessao de videos -->
-			<div class = "container-fluid" style="background: #DDDDDD; width:100%">
-				<br>
-				<h3 style = "margin-left: 100px"> Vídeos </h3>
-				<div class="row" id="videos">
-					<div class = "col-md-4">
-						<iframe width="400" height="250" src="https://www.youtube.com/embed/N8hc61EbBMM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen style = "margin: 20px"></iframe>
-					</div>
-					<div class = "col-md-4">
-						<iframe width="400" height="250" src="https://www.youtube.com/embed/bCGIB79uOOU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen style = "margin: 20px"></iframe>
-					</div>
-   				</div>
-   				<br>
-  			</div>
-
-			<%- include footer.ejs %>
-<!-- 		</
-		</div> -->
+		<%- include footer.ejs %>
 	</body>
 </html>
 
