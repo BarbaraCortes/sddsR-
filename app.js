@@ -20,3 +20,7 @@ app.get('/', function(req, res) {
 app.get('/dicas', function(req, res) {
 	res.render('dicas');
 });
+
+app.get('/dicas', function(req, res) {
+	res.render('dicas');
+});
