@@ -1,0 +1,87 @@
+<html>
+	<head>
+		<%-include bootstrap.ejs %> <!-- inclui o bootstrap -->
+		<style type="text/css">
+			body {
+				background-color: #DDDDDD;
+				text-align: justify;
+			}
+
+			.img-cartaopostal {
+
+				/*border: solid 1px black;*/
+			}
+
+			#img-logo {
+				max-width: 100%; 
+				height: auto;
+				margin: 15px;
+			}
+		</style>
+		<title> Transporte </title>
+	</head>
+	<body>
+			<%-include navbar.ejs%>
+			<div id="img" style = "width: 100%;">
+				<img src="a.jpg" style = "max-width: 100%; height: auto;" class = "img-cartaopostal">
+			</div>
+			<!-- Sessao de icones -->
+			<div class = "container">
+				<br>
+				<div class="row">
+					<div class = "col-md-6">
+						<center>
+							<a href="#caronas"><img src="carro3.png" style = "max-width: 30%; height: auto; margin: 20px" class = "img-logo"></a>
+						</center>
+						<br>
+						<h3 style="text-align: center"> Caronas </h3>
+					</div>
+					<div class = "col-md-6">
+						<center> 
+							<a href = "#onibus"><img src="onibus.png" style = "max-width: 30%; height: auto; margin: 20px" class = "img-logo"></a>
+						</center>
+						<br>
+						<h3 style="text-align: center"> Ônibus </h3>
+					</div>
+					
+				</div>	
+			</div>
+			<br>
+
+			<!-- Sessao de caronas -->
+			<div class = "container-fluid" style="background: #DDDDDD">
+				<div class="row" id = "caronas">
+					<h3 style = "margin-left: 100px"> Caronas </h3>
+					<div class = "col-md-3">
+
+						<p>
+							INCLUIR TExTO CARONAS
+						</p>
+
+					</br>
+						
+					</div>
+				</div>
+				<br>
+			</div>
+			<!-- Sessao de videos -->
+			<div class = "container-fluid" style="background: #DDDDDD; width:100%">
+				<br>
+				<h3 style = "margin-left: 100px"> Ônibus </h3>
+				<div class="row" id="videos">
+					<div class = "col-md-3">
+						<p>
+							INCLUIR TEXTO ONIBUS 
+						</p>
+
+					</br>
+					</div>
+   				</div>
+   				<br>
+  			</div>
+
+			<%- include footer.ejs %>
+<!-- 		</
+		</div> -->
+	</body>
+</html>

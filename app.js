@@ -28,7 +28,9 @@ app.get('/', function(req, res) {
 	res.render('index');
 });
 
-
+app.get('/transporte', function(req, res) {
+	res.render('transporte');
+});
 app.get('/dicas', function(req, res) {
 	res.render('dicas', {apps: aplicativos, videos: videos, restaurantes: restaurantes});
 });
