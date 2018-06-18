@@ -81,7 +81,7 @@
 			<br>
 
 		<!-- Sessao de aplicativos -->
-		<div class = "container-fluid" style="background: #FFFFFF">
+		<div class = "container-fluid" style="background: #FFFFFF" id = "aplicativos">
 			<h3 style = "margin-left: 100px"> Aplicativos </h3>
 			<%for (var i = 0; i < apps.length; ++i) {%>
 				<div class="slides" id = "<%= apps[i].id %>" style = "width: 100%">
@@ -132,10 +132,10 @@
 
 
 		<!-- Sessao de videos -->
-		<div class = "container-fluid" style="background: #DDDDDD; width:100%">
+		<div class = "container-fluid" style="background: #DDDDDD; width:100%" id = "videos">
 			<br>
 			<h3 style = "margin-left: 100px"> Vídeos </h3>
-			<div class="row" id="videos">
+			<div class="row">
 				<div class = "col-md-4">
 					<center>
 						<iframe width="400" height="250" src="https://www.youtube.com/embed/N8hc61EbBMM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen style = "margin: 20px"></iframe>
@@ -157,10 +157,10 @@
 			</div>
 
 			<!-- Sessao de restaurantes -->
-		<div class = "container-fluid" style="background: #FFFFFF; width:100%">
+		<div class = "container-fluid" style="background: #FFFFFF; width:100%" id="restaurantes">
 			<br>
 			<h3 style = "margin-left: 100px"> Restaurantes </h3>
-			<div class="row" id="restaurantes">
+			<div class="row">
 			<div class = "col-md-3">
 					<center> 
 						<img src="https://static-images.ifood.com.br/image/upload/f_auto,t_low/logosgde/201708041051_44d7da15-b5e9-420b-907c-dbeb33c8a1bd.png" style = "max-width: 50%; height: auto; margin: 20px;">
