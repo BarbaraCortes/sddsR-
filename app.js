@@ -21,6 +21,6 @@ app.get('/dicas', function(req, res) {
 	res.render('dicas');
 });
 
-app.get('/dicas', function(req, res) {
-	res.render('dicas');
+app.get('/transporte', function(req, res) {
+	res.render('transporte');
 });
