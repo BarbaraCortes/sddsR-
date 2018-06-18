@@ -31,14 +31,12 @@
 
 			div.leftArrow{
 			    position: absolute;
-			    top: 1280px;
 			    left: 0px;
 			    float: left;
 			}
 
 			div.rightArrow{
 			    position: absolute;
-			    top: 1280px;
 			    right: 0px;
 			    float: right;
 			}
@@ -90,12 +88,13 @@
 							<img src="<%= apps[i].img %>" style = "max-width: 33%; height: auto; margin: 20px;">
 						</center>
 						<h4 style = "color: blue; text-align: center"><a href = "<%= apps[i].link %>"><%= apps[i].name %></a></h4>
+						<br>
 					</div>
 					<div class = "col-md-3">
 						<h4 style = "margin: 10px; margin-top: 40px"> <%= apps[i].desc %></h4>
 					</div>
 					<div class = "col-md-3">
-						<a href='<%= apps[i].play_lin %>'><img alt='Disponível no Google Play' src='https://play.google.com/intl/en_us/badges/images/generic/pt-br_badge_web_generic.png' style = "width: 60%;position:absolute;
+						<a href='<%= apps[i].play_link %>'><img alt='Disponível no Google Play' src='https://play.google.com/intl/en_us/badges/images/generic/pt-br_badge_web_generic.png' style = "width: 60%;position:absolute;
 							left:25%;
 							margin-top:35px;"/></a>
 					</div>
@@ -106,11 +105,12 @@
 					</div>
 				</div>
 			<% } %>
-
+			<br>
+			<br>
 			<div class = "leftArrow">
 			  	<a onclick="plusSlides(-1)">
 				    <img name="left arrow"
-				    	src="leftarrow.jpeg"
+				    	src="leftarrow.png"
 				     	alt="leftArrow"
 				     	align="middle"
 				     	style = "width: 50px; height: auto">
@@ -120,14 +120,14 @@
 			<div class = "rightArrow">
 				<a onclick="plusSlides(1)">
 					<img name="right arrow"
-						src="rightarrow.jpeg"
+						src="rightarrow.png"
 						alt="rightArrow"
 						align="middle"
 						style = "width: 50px; height: auto">
 				</a>
 			</div>
 
-			<br>
+			
 		</div>
 
 
