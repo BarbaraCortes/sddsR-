@@ -11,16 +11,26 @@ app.listen(3000, function() {
 	console.log("Ola mundo :)");
 });
 
+var fs = require("fs");
+
+var contents = fs.readFileSync("aplicativos.json");
+var aplicativos = JSON.parse(contents);
+
+contents = fs.readFileSync("videos.json");
+var videos = JSON.parse(contents);
+
+contents = fs.readFileSync("restaurantes.json");
+var restaurantes = JSON.parse(contents);
+
 
 /* Se uma requisicao get no diretorio '/' for recebida, renderiza a index.ejs (pagina inicial) */
 app.get('/', function(req, res) {
 	res.render('index');
 });
 
-app.get('/dicas', function(req, res) {
-	res.render('dicas');
-});
-
 app.get('/transporte', function(req, res) {
 	res.render('transporte');
+});
+app.get('/dicas', function(req, res) {
+	res.render('dicas', {apps: aplicativos, videos: videos, restaurantes: restaurantes});
 });

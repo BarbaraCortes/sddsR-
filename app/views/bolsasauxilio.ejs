@@ -1,0 +1,49 @@
+<html>
+	<head>
+		<%-include bootstrap.ejs %> <!-- inclui o bootstrap -->
+		<style type="text/css">
+			body {
+				background-color: #DDDDDD;
+				text-align: justify;
+			}
+
+			.img-cartaopostal {
+
+				/*border: solid 1px black;*/
+			}
+
+			#img-logo {
+				max-width: 100%; 
+				height: auto;
+				margin: 15px;
+			}
+		</style>
+		<title> Bolsas Auxílio </title>
+	</head>
+	<body>
+		<!-- <div class = "container">
+		 -->	<!--<h1> Ola Sanca !! </h1> -->
+			<%-include navbar.ejs%>
+			<div id="img" style = "width: 100%;">
+				<img src="a.jpg" style = "max-width: 100%; height: auto;" class = "img-cartaopostal">
+			</div>
+			<div class = "container">
+
+				<div class="row">
+					<table>
+						<tr>
+							<td>
+								<img src="usp.png" alt = "logo usp">
+							</td>
+							<td>
+								<img src="ufscar.png" alt = "logo ufscar">
+							</td>
+						</tr>
+					</table>
+				</div>	
+			</div>
+			<%- include footer.ejs %>
+<!-- 		</
+		</div> -->
+	</body>
+</html>
