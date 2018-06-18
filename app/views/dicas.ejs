@@ -1,6 +1,21 @@
 <html>
 	<head>
 		<%-include bootstrap.ejs %> <!-- inclui o bootstrap -->
+		<script src="js/dicas.js"></script>
+		<script type = "text/javascript">
+			var sliderApp, sliderRest, sliderVideos;
+			
+			$(function() {
+		    	sliderApp = new slider("slides_app", <%=apps.length%>);
+				sliderApp.showSlides();
+
+				//sliderRest = new slider("slides_rest", <%=restaurantes.length%>);
+				//sliderRest.showSlides();
+				//sliderVideos = new slider("slides_vids", Math.floor((<%=videos.length%> + 2)/3));
+				//sliderVideos.showSlides();
+			});
+		</script>
+
 		<style type="text/css">
 			body {
 				background-color: #DDDDDD;
@@ -23,10 +38,6 @@
 			    margin-right: auto;
 			    margin-top: auto;
 			    margin-bottom: auto;
-			}
-
-			.slides{
-			    display: none;
 			}
 
 			div.leftArrow{
@@ -84,7 +95,7 @@
 		<div class = "container-fluid" style="background: #FFFFFF" id = "aplicativos">
 			<h3 style = "margin-left: 100px"> Aplicativos </h3>
 			<%for (var i = 0; i < apps.length; ++i) {%>
-				<div class="slides" id = "<%= apps[i].id %>" style = "width: 100%">
+				<div class="slides_app" id = "<%= apps[i].id %>" style = "width: 100%">
 					<div class = "col-md-3">
 						<center> 
 							<img src="<%= apps[i].img %>" style = "max-width: 33%; height: auto; margin: 20px;">
@@ -108,7 +119,7 @@
 			<% } %>
 
 			<div class = "leftArrow">
-			  	<a onclick="plusSlides(-1)">
+			  	<a onclick="sliderApp.plusSlides(-1)">
 				    <img name="left arrow"
 				    	src="leftarrow.jpeg"
 				     	alt="leftArrow"
@@ -118,7 +129,7 @@
 			</div>
 
 			<div class = "rightArrow">
-				<a onclick="plusSlides(1)">
+				<a onclick="sliderApp.plusSlides(1)">
 					<img name="right arrow"
 						src="rightarrow.jpeg"
 						alt="rightArrow"
@@ -184,6 +195,5 @@
 			</div>
 			<%- include footer.ejs %>
 	</body>
-	<script src="js/dicas.js"></script>
 </html>
 

@@ -1,18 +1,20 @@
-var slideIndex = 0;
-showSlides();
+function slider(_id, _n) {
+	this.index = 0;
+	this.id = _id;
+	this.n = _n;
 
-//Next/Previous control
-function plusSlides(passo) {
-	slideIndex = (slideIndex + passo + 2) % 2;
-	showSlides();
-}
+	this.showSlides = function() {
+		var slides = document.getElementsByClassName(this.id);
 
-function showSlides() {
-	var slides = document.getElementsByClassName("slides");
-
-	var i;
-	for (i = 0; i < slides.length; i++){
-		slides[i].style.display = "none";
+		for (var i = 0; i < slides.length; i++){
+			slides[i].style.display = "none";
+		}
+		slides[this.index].style.display = "block";
 	}
-	slides[slideIndex].style.display = "block";
+
+	this.plusSlides = function(passo) {
+		this.index = (this.index + passo + this.n) % this.n;
+		this.showSlides();
+	}
+	
 }
