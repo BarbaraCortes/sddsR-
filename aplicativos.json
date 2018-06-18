@@ -1,0 +1,19 @@
+[
+	{
+		"name": "Beblue",
+		"desc": "O Beblue é um aplicativo de cashback, isso significa que você pode pagar a conta em restaurantes selecionados através dele e receber dinheiro de volta para futuras compras!",
+		"img": "beblue.png",
+		"link": "https://www.beblue.com.br/",
+		"play_link": "https://play.google.com/store/apps/details?id=br.com.beblue&hl=pt_BR&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1",
+		"app_link": "https://itunes.apple.com/br/app/beblue-seu-dinheiro-de-volta/id1033201079?mt=8"
+	},
+
+	{
+		"name": "Splitwise",
+		"desc": "O Splitwise a kako explica depois oq eh",
+		"img": "splitwise.png",
+		"link": "https://www.beblue.com.br/",
+		"play_link": "https://play.google.com/store/apps/details?id=br.com.beblue&hl=pt_BR&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1",
+		"app_link": "https://itunes.apple.com/br/app/beblue-seu-dinheiro-de-volta/id1033201079?mt=8"
+	}
+]
