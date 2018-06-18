@@ -34,3 +34,7 @@ app.get('/transporte', function(req, res) {
 app.get('/dicas', function(req, res) {
 	res.render('dicas', {apps: aplicativos, videos: videos, restaurantes: restaurantes});
 });
+
+app.get('/bolsasauxilio', function(req, res) {
+	res.render('bolsasauxilio');
+});

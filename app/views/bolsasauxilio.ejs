@@ -18,30 +18,155 @@
 				margin: 15px;
 			}
 		</style>
-		<title> Bolsas Auxílio </title>
+		<title> BOLSAS AUXÍLIO </title>
 	</head>
 	<body>
-		<!-- <div class = "container">
-		 -->	<!--<h1> Ola Sanca !! </h1> -->
 			<%-include navbar.ejs%>
 			<div id="img" style = "width: 100%;">
 				<img src="a.jpg" style = "max-width: 100%; height: auto;" class = "img-cartaopostal">
 			</div>
+			<!-- Sessao de icones -->
 			<div class = "container">
-
+				<br>
 				<div class="row">
-					<table>
-						<tr>
-							<td>
-								<img src="usp.png" alt = "logo usp">
-							</td>
-							<td>
-								<img src="ufscar.png" alt = "logo ufscar">
-							</td>
-						</tr>
-					</table>
+					<div class = "col-md-3">
+						<center>
+							<a href="#usp"><img src="usp.png" style = "max-width: 40%; height: auto; margin: 20px" class = "img-logo"></a>
+						</center>
+						<br>
+						<h3 style="text-align: center"> USP </h3>
+					</div>
+					<div class = "col-md-3">
+						<center> 
+							<a href = "#uf20pxscar"><img src="ufscar.png" style = "max-width: 40%; height: auto; margin: 20px" class = "img-logo"></a>
+						</center>
+						<br>
+						<h3 style="text-align: center"> UFSCAR </h3>
+					</div>
+
+						<div class = "col-md-3">
+						<center>
+							<a href="#ifsp"><img src="carro3.jpg" style = "max-width: 40%; height: auto; margin: 20px" class = "img-logo"></a>
+						</center>
+						<br>
+						<h3 style="text-align: center"> IFSP </h3>
+					</div>
+
+					<div class = "col-md-3">
+						<center>
+							<a href="#ic"><img src="carro3.jpg" style = "max-width: 40%; height: auto; margin: 20px" class = "img-logo"></a>
+						</center>
+						<br>
+						<h3 style="text-align: center"> INICIAÇÃO CIENTÍFICA </h3>
+					</div>
+					
+					<div class = "col-md-3">
+						<center>
+							<a href="#intercambio"><img src="carro3.jpg" style = "max-width: 40%; height: auto; margin: 20px" class = "img-logo"></a>
+						</center>
+						<br>
+						<h3 style="text-align: center"> INTERCÂMBIO </h3>
+					</div>
+
 				</div>	
 			</div>
+			<br>
+
+			<!-- Sessao da usp -->
+			<div class = "container-fluid" style="background: #DDDDDD">
+				<div class="row" id = "usp">
+					<h3 style = "margin-left: 600px"> USP </h3>
+					<div class = "col-md-6">
+
+						<%-include descricao_usp.ejs %>
+						
+					</div>
+					<div class = "col-md-6">
+
+						<%-include descricao_usp2.ejs %>
+						
+					</div>
+
+				</div>
+				<br>
+			</div>
+			<!-- Sessao da ufscar -->
+			<div class = "container-fluid" style="background: #DDDDDD; width:100%">
+				<br>
+				<h3 style = "margin-left: 550px"> UFSCAR </h3>
+				<div class="row" id="ufscar">
+					<div class = "col-md-6">
+						<%-include descricao_usfcar.ejs %>
+						
+					</div>
+					<div class = "col-md-6">
+
+						<%-include descricao_usfcar2.ejs %>
+						
+					</div>
+
+
+					</br>
+					</div>
+   				</div>
+   				<br>
+  			</div>
+
+  					<!-- Sessao do ifsp -->
+			<div class = "container-fluid" style="background: #DDDDDD; width:100%">
+				<br>
+				<h3 style = "margin-left: 550px"> IFSP </h3>
+				<div class="row" id="ifsp">
+					<div class = "col-md-6">
+						<%-include descricao_ifsp.ejs %>
+						
+					</div>
+					<div class = "col-md-6">
+
+						<%-include descricao_ifsp2.ejs %>
+						
+					</div>
+
+
+					</br>
+					</div>
+   				</div>
+   				<br>
+  			</div>
+
+  			<!-- Sessao da ic -->
+			<div class = "container-fluid" style="background: #DDDDDD">
+				<div class="row" id = "ic">
+					<h3 style = "margin-left: 500px"> INICIAÇÃO CIENTÍFICA </h3>
+					<div class = "col-md-6">
+
+						<%-include descricao_ic.ejs %>
+						
+					</div>
+					<div class = "col-md-6">
+
+						<%-include descricao_ic2.ejs %>
+						
+					</div>
+
+				</div>
+				<br>
+			</div>
+
+					<!-- Sessao da intercambio -->
+			<div class = "container-fluid" style="background: #DDDDDD">
+				<div class="row" id = "intercambio">
+					<h3 style = "margin-left: 500px"> INTERCÂMBIO </h3>
+					<div class = "col-md-6">
+
+						<%-include descricao_intercambio.ejs %>
+						
+					</div>
+				</div>
+				<br>
+			</div>
+
+
 			<%- include footer.ejs %>
 <!-- 		</
 		</div> -->
