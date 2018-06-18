@@ -83,27 +83,30 @@
 		<!-- Sessao de aplicativos -->
 		<div class = "container-fluid" style="background: #FFFFFF">
 			<h3 style = "margin-left: 100px"> Aplicativos </h3>
-			<div class="slides" id = "beblue" style = "width: 100%">
-				<div class = "col-md-3">
-					<center> 
-						<img src="beblue.png" style = "max-width: 33%; height: auto; margin: 20px;">
-					</center>
-					<h4 style = "color: blue; text-align: center"><a href = "https://www.beblue.com.br/">Beblue</a></h4>
+			<%for (var i = 0; i < apps.length; ++i) {%>
+				<div class="slides" id = "<%= apps[i].id %>" style = "width: 100%">
+					<div class = "col-md-3">
+						<center> 
+							<img src="<%= apps[i].img %>" style = "max-width: 33%; height: auto; margin: 20px;">
+						</center>
+						<h4 style = "color: blue; text-align: center"><a href = "<%= apps[i].link %>"><%= apps[i].name %></a></h4>
+					</div>
+					<div class = "col-md-3">
+						<h4 style = "margin: 10px; margin-top: 40px"> <%= apps[i].desc %></h4>
+					</div>
+					<div class = "col-md-3">
+						<a href='<%= apps[i].play_lin %>'><img alt='Disponível no Google Play' src='https://play.google.com/intl/en_us/badges/images/generic/pt-br_badge_web_generic.png' style = "width: 60%;position:absolute;
+							left:25%;
+							margin-top:35px;"/></a>
+					</div>
+					<div class = "col-md-3">
+						<a href='<%= apps[i].app_link %>'><img src = "apple.svg" style = "width: 50%; position:absolute;
+							left:25%;
+							margin-top:50px;"></a>
+					</div>
 				</div>
-				<div class = "col-md-3">
-					<h4 style = "margin: 10px; margin-top: 40px"> O Beblue é um aplicativo de cashback, isso significa que você pode pagar a conta em restaurantes selecionados através dele e receber dinheiro de volta para futuras compras!</h4>
-				</div>
-				<div class = "col-md-3">
-					<a href='https://play.google.com/store/apps/details?id=br.com.beblue&hl=pt_BR&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img alt='Disponível no Google Play' src='https://play.google.com/intl/en_us/badges/images/generic/pt-br_badge_web_generic.png' style = "width: 60%;position:absolute;
-						left:25%;
-						margin-top:35px;"/></a>
-				</div>
-				<div class = "col-md-3">
-					<a href='https://itunes.apple.com/br/app/beblue-seu-dinheiro-de-volta/id1033201079?mt=8'><img src = "apple.svg" style = "width: 50%; position:absolute;
-						left:25%;
-						margin-top:50px;"></a>
-				</div>
-			</div>
+			<% } %>
+			<!--
 			<div class="slides" id = "splitwise" style = "width: 100%">
 				<div class = "col-md-3">
 					<center> 
@@ -124,7 +127,7 @@
 						left:25%;
 						margin-top:50px;"></a>
 				</div>
-			</div>
+			</div>-->
 
 			<div class = "leftArrow">
 			  	<a onclick="plusSlides(-1)">
@@ -203,6 +206,6 @@
 			</div>
 			<%- include footer.ejs %>
 	</body>
-	<script src="js/button.js"></script>
+	<script src="js/dicas.js"></script>
 </html>
 

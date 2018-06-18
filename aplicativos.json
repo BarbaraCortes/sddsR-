@@ -1,5 +1,6 @@
 [
 	{
+		"id": "beblue",
 		"name": "Beblue",
 		"desc": "O Beblue é um aplicativo de cashback, isso significa que você pode pagar a conta em restaurantes selecionados através dele e receber dinheiro de volta para futuras compras!",
 		"img": "beblue.png",
@@ -9,6 +10,7 @@
 	},
 
 	{
+		"id": "splitwise",
 		"name": "Splitwise",
 		"desc": "O Splitwise a kako explica depois oq eh",
 		"img": "splitwise.png",
