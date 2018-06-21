@@ -1,13 +1,13 @@
 <html>
 	<head>
 		<%-include bootstrap.ejs %> <!-- inclui o bootstrap -->
-		/*<script src="js/associacoes.js"></script>
+		<script src="js/slider.js"></script>
 		<script type = "text/javascript">
-			var sliderApp, sliderRest, sliderVideos;
+			var sliderCaaso, sliderRest, sliderVideos;
 			
 			$(function() {
-		    	sliderApp = new slider("slides_app", <%=apps.length%>);
-				sliderApp.showSlides();
+		    	sliderCaaso = new slider("slides_sociocaaso", <%=sociocaaso.length%>);
+				sliderCaaso.showSlides();
 
 				sliderRest = new slider("slides_rest", <%=restaurantes.length%>);
 				sliderRest.showSlides();
@@ -69,7 +69,7 @@
 						<a href="#sociocaaso"><img src="caaso.jpg" style = "max-width: 33%; height: auto; margin: 20px" class = "img-logo"></a>
 					</center>
 					<br>
-					<h3 style="text-align: center"> Sócio CAASO </h3>
+					<h3 style="text-align: center"> Sócio Caaso </h3>
 				</div>
 				<div class = "col-md-4">
 					<center> 
@@ -89,28 +89,28 @@
 		</div>
 		<br>
 
-		<!-- Sessao de aplicativos -->
+		<!-- Sessao do socio caaso -->
 		<div class = "container-fluid" style="background: #FFFFFF" id = "sociocaaso">
-			<h3 style = "margin-left: 100px"> Aplicativos </h3>
-			<%for (var i = 0; i < apps.length; ++i) {%>
-				<div class="slides_app" id = "<%= apps[i].id %>" style = "width: 100%">
+			<h3 style = "margin-left: 100px"> Sócio Caaso </h3>
+			<%for (var i = 0; i < sociocaaso.length; ++i) {%>
+				<div class="slides_sociocaaso" id = "<%= sociocaaso[i].id %>" style = "width: 100%">
 					<div class = "col-md-3">
 						<center> 
-							<img src="<%= apps[i].img %>" style = "max-width: 33%; height: auto; margin: 20px;">
+							<img src="<%= sociocaaso[i].img %>" style = "max-width: 33%; height: auto; margin: 20px;">
 						</center>
-						<h4 style = "color: blue; text-align: center"><a href = "<%= apps[i].link %>"><%= apps[i].name %></a></h4>
+						<h4 style = "color: blue; text-align: center"><a href = "<%= sociocaaso[i].link %>"><%= sociocaaso[i].name %></a></h4>
 						<br>
 					</div>
 					<div class = "col-md-3">
-						<h4 style = "margin: 10px; margin-top: 40px"> <%= apps[i].desc %></h4>
+						<h4 style = "margin: 10px; margin-top: 40px"> <%= sociocaaso[i].desc %></h4>
 					</div>
 					<div class = "col-md-3">
-						<a href='<%= apps[i].play_link %>'><img alt='Disponível no Google Play' src='https://play.google.com/intl/en_us/badges/images/generic/pt-br_badge_web_generic.png' style = "width: 60%;position:absolute;
+						<a href='<%= sociocaaso[i].play_link %>'><img alt='Disponível no Google Play' src='https://play.google.com/intl/en_us/badges/images/generic/pt-br_badge_web_generic.png' style = "width: 60%;position:absolute;
 							left:25%;
 							margin-top:35px;"/></a>
 					</div>
 					<div class = "col-md-3">
-						<a href='<%= apps[i].app_link %>'><img src = "apple.svg" style = "width: 50%; position:absolute;
+						<a href='<%= sociocaaso[i].app_link %>'><img src = "apple.svg" style = "width: 50%; position:absolute;
 							left:25%;
 							margin-top:50px;"></a>
 					</div>
@@ -119,7 +119,7 @@
 			<br>
 			<br>
 			<div class = "leftArrow">
-			  	<a onclick="sliderApp.plusSlides(-1)">
+			  	<a onclick="sliderCaaso.plusSlides(-1)">
 				    <img name="left arrow"
 				    	src="leftarrow.png"
 				     	alt="leftArrow"
@@ -129,7 +129,7 @@
 			</div>
 
 			<div class = "rightArrow">
-				<a onclick="sliderApp.plusSlides(1)">
+				<a onclick="sliderCaaso.plusSlides(1)">
 					<img name="right arrow"
 						src="rightarrow.png"
 						alt="rightArrow"
