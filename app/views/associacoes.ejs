@@ -90,41 +90,51 @@
 		<br>
 
 		<!-- Sessao do socio caaso -->
-		<div class = "container-fluid" style="background: #FFFFFF" id = "sociocaaso">
-			<h3 style = "margin-left: 100px"> Sócio Caaso </h3>
-			<%for (var i = 0; i < sociocaaso.length; ++i) {%>
-				<div class="slides_sociocaaso" id = "<%= sociocaaso[i].id %>" style = "width: 100%">
-					<div class = "col-md-3">
-						<center> 
-							<img src="<%= sociocaaso[i].img %>" style = "max-width: 33%; height: auto; margin: 20px;">
-						</center>
-						<h4 style = "color: blue; text-align: center"><a href = "<%= sociocaaso[i].link %>"><%= sociocaaso[i].name %></a></h4>
-						<br>
-					</div>
-					<div class = "col-md-3">
-						<h4 style = "margin: 10px; margin-top: 40px"> <%= sociocaaso[i].desc %></h4>
-					</div>
-					<div class = "col-md-3">
-						<a href='<%= sociocaaso[i].play_link %>'><img alt='Disponível no Google Play' src='https://play.google.com/intl/en_us/badges/images/generic/pt-br_badge_web_generic.png' style = "width: 60%;position:absolute;
-							left:25%;
-							margin-top:35px;"/></a>
-					</div>
-					<div class = "col-md-3">
-						<a href='<%= sociocaaso[i].app_link %>'><img src = "apple.svg" style = "width: 50%; position:absolute;
-							left:25%;
-							margin-top:50px;"></a>
-					</div>
+		<div class = "container-fluid" id = "sociocaaso">
+			<h2 style = "margin-left: 50px"> Sócio Caaso </h2>
+			<div>
+				<h3 style="margin-left: 100px; margin-right: 100px">Descrição</h3>
+				<div class = "col-md-offset-1 col-md-4">
+					<p>
+						O Sócio Caaso é uma ótima maneira de conseguir descontos em festas, estabelecimentos, produtos e ainda poder fazer uso do Salão de Jogos e da BiblioteCAASO. É uma associação anual e pode ser adquirida por alunos e ex-alunos do CAASO.
+					</p>
 				</div>
-			<% } %>
-			<br>
-			<br>
-			<div class = "leftArrow">
+				<div class = "col-md-offset-1 col-md-4">
+					<p>
+						Os preços são variáveis:<br>
+						Graduação: R$40,00<br>
+						Alojamento: R$20,00<br>
+						Pós Graduação: R$45,00<br>
+						Ex-Alunos: R$60,00
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="container-fluid" style="background: #FFFFFF; width:100%; margin-top: 20px">
+			<div class="slides_sociocaaso" style = "width: 100% background-color: #FFFFFF;"> 
+				<% for(var i = 0; i < sociocaaso.length; ++i) {%>
+					<% if(i > 0 && i%3 == 0) {%> 
+						</div>
+						<div class="slides_sociocaaso" style = "width: 100%; background-color: #FFFFFF"> 
+					<%}%>
+					<div class = "col-md-4">
+						<div class = "col-md-6">
+							<img src = "<%= sociocaaso[i].img %>" style="width: 70%; height: auto">
+						</div>
+						<div class = "col-md-6" style="text-align: center">
+							<h4><%= sociocaaso[i].nome %></h4>
+							<p><%= sociocaaso[i].desc %></p>
+						</div>
+					</div>
+				<%}%>
+			</div>
+			<div class = "leftArrow" style="display: inline-block;">
 			  	<a onclick="sliderCaaso.plusSlides(-1)">
 				    <img name="left arrow"
 				    	src="leftarrow.png"
 				     	alt="leftArrow"
-				     	align="middle"
-				     	style = "width: 50px; height: auto">
+				     	vertical-align= "center"
+				     	style = "width: 50px; height: auto; display: inline-block;">
 			  	</a>
 			</div>
 
@@ -138,7 +148,8 @@
 				</a>
 			</div>
 		</div>
-
+		<br>
+		<br>
 
 		<!-- Sessao de videos -->
 		<div class = "container-fluid" style="background: #DDDDDD; width:100%" id = "videos">
