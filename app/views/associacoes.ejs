@@ -4,15 +4,18 @@
 		<script src="js/slider.js"></script>
 		<script type = "text/javascript">
 			var sliderCaaso, sliderRest, sliderVideos;
+
+			console.log(<%=sociocaaso.length%>);
 			
 			$(function() {
-		    	sliderCaaso = new slider("slides_sociocaaso", <%=sociocaaso.length%>);
+		    	sliderCaaso = new slider("slides_sociocaaso", Math.floor((<%=sociocaaso.length%> + 2)/3));
 				sliderCaaso.showSlides();
 
-				sliderRest = new slider("slides_rest", <%=restaurantes.length%>);
-				sliderRest.showSlides();
 				sliderVideos = new slider("slides_vids", Math.floor((<%=videos.length%> + 2)/3));
 				sliderVideos.showSlides();
+				
+				sliderRest = new slider("slides_rest", <%=restaurantes.length%>);
+				sliderRest.showSlides();
 			});
 		</script>
 
@@ -111,11 +114,11 @@
 			</div>
 		</div>
 		<div class="container-fluid" style="background: #FFFFFF; width:100%; margin-top: 20px">
-			<div class="slides_sociocaaso" style = "width: 100% background-color: #FFFFFF;"> 
+			<div class="slides_sociocaaso" style = "width: 100%"> 
 				<% for(var i = 0; i < sociocaaso.length; ++i) {%>
 					<% if(i > 0 && i%3 == 0) {%> 
 						</div>
-						<div class="slides_sociocaaso" style = "width: 100%; background-color: #FFFFFF"> 
+						<div class="slides_sociocaaso" style = "width: 100%;"> 
 					<%}%>
 					<div class = "col-md-4">
 						<div class = "col-md-6">
