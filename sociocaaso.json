@@ -1,0 +1,32 @@
+[
+	{
+		"nome": "Genau Idiomas",
+		"id": "genau",
+		"desc": "10% de desconto + isenção da taxa de matrícula",
+		"img": "genau.png"
+	},
+	{
+		"nome": "zwei",
+		"id": "zwei",
+		"desc": "isenção da taxa de matrícula",
+		"img": "zwei.png"
+	},
+	{
+		"nome": "Aliança Francesa",
+		"id": "aliancafrancesa",
+		"desc": "5% de desconto na parcela",
+		"img": "af.png"
+	},
+	{
+		"nome": "Aliança Idiomas",
+		"id": "aliancaidiomas",
+		"desc": "5% de desconto na parcela",
+		"img": "af.png"
+	},
+	{
+		"nome": "zwei",
+		"id": "zwei",
+		"desc": "isenção da taxa de matrícula",
+		"img": "zwei.png"
+	}
+]

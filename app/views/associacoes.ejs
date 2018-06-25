@@ -1,0 +1,311 @@
+<html>
+	<head>
+		<%-include bootstrap.ejs %> <!-- inclui o bootstrap -->
+		<script src="js/slider.js"></script>
+		<script type = "text/javascript">
+			var sliderCaaso, sliderFederal, sliderVideos;
+			
+			$(function() {
+		    	sliderCaaso = new slider("slides_sociocaaso", Math.floor((<%=sociocaaso.length%> + 2)/3));
+				sliderCaaso.showSlides();
+
+		    	sliderFederal = new slider("slides_sociofederal", Math.floor((<%=sociofederal.length%> + 2)/3));
+				sliderFederal.showSlides();
+				
+				sliderRest = new slider("slides_rest", <%=restaurantes.length%>);
+				sliderRest.showSlides();
+			});
+		</script>
+
+		<style type="text/css">
+			body {
+				background-color: #DDDDDD;
+				text-align: justify;
+			}
+			.img-cartaopostal {
+				/*border: solid 1px black;*/
+			}
+			#img-logo {
+				max-width: 100%; 
+				height: auto;
+				margin: 15px;
+			}
+			.content{
+			    position: relative;
+			    width: 98%;
+			    height: 98%;
+
+			    margin-left: auto;
+			    margin-right: auto;
+			    margin-top: auto;
+			    margin-bottom: auto;
+			}
+
+			div.leftArrow{
+			    position: absolute;
+			    left: 0px;
+			    float: left;
+			}
+
+			div.rightArrow{
+			    position: absolute;
+			    right: 0px;
+			    float: right;
+			}
+		</style>
+		<title> Associações </title>
+	</head>
+	<body>
+		<%-include navbar.ejs%>
+		<div id="img" style = "width: 100%;">
+			<img src="a.jpg" style = "max-width: 100%; height: auto;" class = "img-cartaopostal">
+		</div>
+
+		<!-- Sessao de icones -->
+		<div class = "container">
+			<br>
+			<div class="row">
+				<div class = "col-md-4">
+					<center>
+						<a href="#sociocaaso"><img src="caaso.jpg" style = "max-width: 33%; height: auto; margin: 20px" class = "img-logo"></a>
+					</center>
+					<br>
+					<h3 style="text-align: center"> Sócio Caaso </h3>
+				</div>
+				<div class = "col-md-4">
+					<center> 
+						<a href = "#sociofederal"><img src="sociofederal.png" style = "max-width: 33%; height: auto; margin: 20px" class = "img-logo"></a>
+					</center>
+					<br>
+					<h3 style="text-align: center"> Sócio Federal </h3>
+				</div>
+				<div class = "col-md-4">
+					<center> 
+						<a href="#restaurantes"><img src="restaurante.png" style = "max-width: 33%; height: auto; margin: 20px" class = "img-logo"></a>
+					</center>
+					<br>
+					<h3 style="text-align: center"> Restaurantes </h3>
+				</div>
+			</div>	
+		</div>
+		<br>
+
+		<!-- Sessao do socio caaso -->
+		<div class = "container-fluid" id = "sociocaaso">
+			<h2 style = "margin-left: 50px"> Sócio Caaso </h2>
+			<div>
+				<h3 style="margin-left: 100px; margin-right: 100px">Descrição</h3>
+				<div class = "col-md-offset-1 col-md-4">
+					<p>
+						O Sócio Caaso é uma ótima maneira de conseguir descontos em festas, estabelecimentos, produtos e ainda poder fazer uso do Salão de Jogos e da BiblioteCAASO. É uma associação anual e pode ser adquirida por alunos e ex-alunos do CAASO.
+					</p>
+				</div>
+				<div class = "col-md-offset-1 col-md-4">
+					<p>
+						Os preços são variáveis:<br>
+						Graduação: R$40,00<br>
+						Alojamento: R$20,00<br>
+						Pós Graduação: R$45,00<br>
+						Ex-Alunos: R$60,00
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="container-fluid" style="background: #FFFFFF; width:100%; margin-top: 20px">
+			<div class="slides_sociocaaso" style = "width: 100%"> 
+				<% for(var i = 0; i < sociocaaso.length; ++i) {%>
+					<% if(i > 0 && i%3 == 0) {%> 
+						</div>
+						<div class="slides_sociocaaso" style = "width: 100%;"> 
+					<%}%>
+					<div class = "col-md-4">
+						<div class = "col-md-6">
+							<img src = "<%= sociocaaso[i].img %>" style="width: 70%; height: auto">
+						</div>
+						<div class = "col-md-6" style="text-align: center">
+							<h4><%= sociocaaso[i].nome %></h4>
+							<p><%= sociocaaso[i].desc %></p>
+						</div>
+					</div>
+				<%}%>
+			</div>
+			<div class = "leftArrow" style="display: inline-block;">
+			  	<a onclick="sliderCaaso.plusSlides(-1)">
+				    <img name="left arrow"
+				    	src="leftarrow.png"
+				     	alt="leftArrow"
+				     	vertical-align= "center"
+				     	style = "width: 50px; height: auto; display: inline-block;">
+			  	</a>
+			</div>
+
+			<div class = "rightArrow">
+				<a onclick="sliderCaaso.plusSlides(1)">
+					<img name="right arrow"
+						src="rightarrow.png"
+						alt="rightArrow"
+						align="middle"
+						style = "width: 50px; height: auto">
+				</a>
+			</div>
+		</div>
+		<br>
+		<br>
+
+		<!-- Sessao do socio federal -->
+		<div class = "container-fluid" id = "sociofederal">
+			<h2 style = "margin-left: 50px"> Sócio Federal </h2>
+			<div>
+				<h3 style="margin-left: 100px; margin-right: 100px">Descrição</h3>
+				<div class = "col-md-offset-1 col-md-4">
+					<p>
+						O Sócio Federal é nao sei bem ainda.
+					</p>
+				</div>
+				<div class = "col-md-offset-1 col-md-4">
+					<p>
+						Os preços são variáveis:<br>
+						Graduação: R$40,00<br>
+						Alojamento: R$20,00<br>
+						Pós Graduação: R$45,00<br>
+						Ex-Alunos: R$60,00
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="container-fluid" style="background: #FFFFFF; width:100%; margin-top: 20px">
+			<div class="slides_sociofederal" style = "width: 100% background-color: #FFFFFF;"> 
+				<% for(var i = 0; i < sociofederal.length; ++i) {%>
+					<% if(i > 0 && i%3 == 0) {%> 
+						</div>
+						<div class="slides_sociofederal" style = "width: 100%; background-color: #FFFFFF"> 
+					<%}%>
+					<div class = "col-md-4">
+						<div class = "col-md-6">
+							<img src = "<%= sociofederal[i].img %>" style="width: 70%; height: auto">
+						</div>
+						<div class = "col-md-6" style="text-align: center">
+							<h4><%= sociofederal[i].nome %></h4>
+							<p><%= sociofederal[i].desc %></p>
+						</div>
+					</div>
+				<%}%>
+			</div>
+			<div class = "leftArrow" style="display: inline-block;">
+			  	<a onclick="sliderFederal.plusSlides(-1)">
+				    <img name="left arrow"
+				    	src="leftarrow.png"
+				     	alt="leftArrow"
+				     	vertical-align= "center"
+				     	style = "width: 50px; height: auto; display: inline-block;">
+			  	</a>
+			</div>
+
+			<div class = "rightArrow">
+				<a onclick="sliderFederal.plusSlides(1)">
+					<img name="right arrow"
+						src="rightarrow.png"
+						alt="rightArrow"
+						align="middle"
+						style = "width: 50px; height: auto">
+				</a>
+			</div>
+		</div>
+		<br>
+		<br>
+
+		<!-- Sessao de videos -->
+		<div class = "container-fluid" style="background: #DDDDDD; width:100%" id = "videos">
+			<br>
+			<h3 style = "margin-left: 100px"> Vídeos </h3>
+			
+			<div class="slides_vids" style = "width: 100%"> 
+				<% for(var i = 0; i < videos.length; ++i) {%>
+					<% if(i > 0 && i%3 == 0) {%> 
+						</div>
+						<div class="slides_vids" style = "width: 100%"> 
+					<%}%>
+					<div class = "col-md-4">
+						<center>
+							<iframe width="400" height="250" src="<%=videos[i]%>" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen style = "margin: 20px"></iframe>
+						</center>
+					</div>
+				<%}%>
+			</div>
+			<br>
+			<div class = "leftArrow">
+			  	<a onclick="sliderVideos.plusSlides(-1)">
+				    <img name="left arrow"
+				    	src="leftarrow.png"
+				     	alt="leftArrow"
+				     	align="middle"
+				     	style = "width: 50px; height: auto">
+			  	</a>
+			</div>
+
+			<div class = "rightArrow">
+				<a onclick="sliderVideos.plusSlides(1)">
+					<img name="right arrow"
+						src="rightarrow.png"
+						alt="rightArrow"
+						align="middle"
+						style = "width: 50px; height: auto">
+				</a>
+			</div>
+		</div>
+
+		<!-- Sessao de restaurantes -->
+		<div class = "container-fluid" style="background: #FFFFFF; width:100%" id="restaurantes">
+			<h3 style = "margin-left: 100px"> Restaurantes </h3>
+			<%for(var i = 0; i < restaurantes.length; ++i) {%>
+				<div class="slides_rest" style = "width: 100%">
+					<div class = "col-md-3">
+						<center> 
+							<img src="<%= restaurantes[i].img%>" style = "max-width: 50%; height: auto; margin: 20px;">
+						</center>
+						<h4 style = "color: black; text-align: center"> <%= restaurantes[i].name %> </a></h4>
+					</div>
+					<div class = "col-md-5">
+						<h4 style = "margin: 10px; margin-top: 40px"> <%= restaurantes[i].desc %> </h4>
+					</div>
+					<div class = "col-md-3">
+					<a href='<%= restaurantes[i].face_link %>'><img alt='Pagina do Facebook' src='http://www.tenhomaisdiscosqueamigos.com/wp-content/uploads/2015/07/facebook.jpg' style = "width: 40%;position:absolute;  
+							left:15%;
+							margin-top:35px;" /> </a>
+					</div>
+					<div class = "col-md-3">
+					<a href='<%= restaurantes[i].ifood_link %>'><img alt='Link do Ifood' src='https://images-na.ssl-images-amazon.com/images/I/51b3GBnw0UL.png' style = "width: 30%;position:absolute; left:80%;
+							margin-top:25px;"/> </a>
+					</div>
+				</div>
+			<%}%>
+			<br>
+			<br>
+			<div class = "leftArrow">
+			  	<a onclick="sliderRest.plusSlides(-1)">
+				    <img name="left arrow"
+				    	src="leftarrow.png"
+				     	alt="leftArrow"
+				     	align="middle"
+				     	style = "width: 50px; height: auto">
+			  	</a>
+			</div>
+
+			<div class = "rightArrow">
+				<a onclick="sliderRest.plusSlides(1)">
+					<img name="right arrow"
+						src="rightarrow.png"
+						alt="rightArrow"
+						align="middle"
+						style = "width: 50px; height: auto">
+				</a>
+			</div>
+		</div>
+
+		
+
+
+		<%- include footer.ejs %>
+	</body>
+</html>
+
