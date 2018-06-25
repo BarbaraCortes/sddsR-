@@ -3,16 +3,14 @@
 		<%-include bootstrap.ejs %> <!-- inclui o bootstrap -->
 		<script src="js/slider.js"></script>
 		<script type = "text/javascript">
-			var sliderCaaso, sliderRest, sliderVideos;
-
-			console.log(<%=sociocaaso.length%>);
+			var sliderCaaso, sliderFederal, sliderVideos;
 			
 			$(function() {
 		    	sliderCaaso = new slider("slides_sociocaaso", Math.floor((<%=sociocaaso.length%> + 2)/3));
 				sliderCaaso.showSlides();
 
-				sliderVideos = new slider("slides_vids", Math.floor((<%=videos.length%> + 2)/3));
-				sliderVideos.showSlides();
+		    	sliderFederal = new slider("slides_sociofederal", Math.floor((<%=sociofederal.length%> + 2)/3));
+				sliderFederal.showSlides();
 				
 				sliderRest = new slider("slides_rest", <%=restaurantes.length%>);
 				sliderRest.showSlides();
