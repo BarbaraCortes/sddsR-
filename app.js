@@ -25,6 +25,9 @@ var restaurantes = JSON.parse(contents);
 contents = fs.readFileSync("sociocaaso.json");
 var sociocaaso = JSON.parse(contents);
 
+contents = fs.readFileSync("sociofederal.json");
+var sociofederal = JSON.parse(contents);
+
 
 /* Se uma requisicao get no diretorio '/' for recebida, renderiza a index.ejs (pagina inicial) */
 app.get('/', function(req, res) {
@@ -41,5 +44,5 @@ app.get('/bolsasauxilio', function(req, res) {
 	res.render('bolsasauxilio');
 });
 app.get('/associacoes', function(req, res) {
-	res.render('associacoes', {sociocaaso: sociocaaso, videos: videos, restaurantes: restaurantes});
+	res.render('associacoes', {sociocaaso: sociocaaso, sociofederal: sociofederal, videos: videos, restaurantes: restaurantes});
 });

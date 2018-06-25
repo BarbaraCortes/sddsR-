@@ -3,16 +3,14 @@
 		<%-include bootstrap.ejs %> <!-- inclui o bootstrap -->
 		<script src="js/slider.js"></script>
 		<script type = "text/javascript">
-			var sliderCaaso, sliderRest, sliderVideos;
-
-			console.log(<%=sociocaaso.length%>);
+			var sliderCaaso, sliderFederal, sliderVideos;
 			
 			$(function() {
 		    	sliderCaaso = new slider("slides_sociocaaso", Math.floor((<%=sociocaaso.length%> + 2)/3));
 				sliderCaaso.showSlides();
 
-				sliderVideos = new slider("slides_vids", Math.floor((<%=videos.length%> + 2)/3));
-				sliderVideos.showSlides();
+		    	sliderFederal = new slider("slides_sociofederal", Math.floor((<%=sociofederal.length%> + 2)/3));
+				sliderFederal.showSlides();
 				
 				sliderRest = new slider("slides_rest", <%=restaurantes.length%>);
 				sliderRest.showSlides();
@@ -143,6 +141,68 @@
 
 			<div class = "rightArrow">
 				<a onclick="sliderCaaso.plusSlides(1)">
+					<img name="right arrow"
+						src="rightarrow.png"
+						alt="rightArrow"
+						align="middle"
+						style = "width: 50px; height: auto">
+				</a>
+			</div>
+		</div>
+		<br>
+		<br>
+
+		<!-- Sessao do socio federal -->
+		<div class = "container-fluid" id = "sociofederal">
+			<h2 style = "margin-left: 50px"> Sócio Federal </h2>
+			<div>
+				<h3 style="margin-left: 100px; margin-right: 100px">Descrição</h3>
+				<div class = "col-md-offset-1 col-md-4">
+					<p>
+						O Sócio Federal é nao sei bem ainda.
+					</p>
+				</div>
+				<div class = "col-md-offset-1 col-md-4">
+					<p>
+						Os preços são variáveis:<br>
+						Graduação: R$40,00<br>
+						Alojamento: R$20,00<br>
+						Pós Graduação: R$45,00<br>
+						Ex-Alunos: R$60,00
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="container-fluid" style="background: #FFFFFF; width:100%; margin-top: 20px">
+			<div class="slides_sociofederal" style = "width: 100% background-color: #FFFFFF;"> 
+				<% for(var i = 0; i < sociofederal.length; ++i) {%>
+					<% if(i > 0 && i%3 == 0) {%> 
+						</div>
+						<div class="slides_sociofederal" style = "width: 100%; background-color: #FFFFFF"> 
+					<%}%>
+					<div class = "col-md-4">
+						<div class = "col-md-6">
+							<img src = "<%= sociofederal[i].img %>" style="width: 70%; height: auto">
+						</div>
+						<div class = "col-md-6" style="text-align: center">
+							<h4><%= sociofederal[i].nome %></h4>
+							<p><%= sociofederal[i].desc %></p>
+						</div>
+					</div>
+				<%}%>
+			</div>
+			<div class = "leftArrow" style="display: inline-block;">
+			  	<a onclick="sliderFederal.plusSlides(-1)">
+				    <img name="left arrow"
+				    	src="leftarrow.png"
+				     	alt="leftArrow"
+				     	vertical-align= "center"
+				     	style = "width: 50px; height: auto; display: inline-block;">
+			  	</a>
+			</div>
+
+			<div class = "rightArrow">
+				<a onclick="sliderFederal.plusSlides(1)">
 					<img name="right arrow"
 						src="rightarrow.png"
 						alt="rightArrow"

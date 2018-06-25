@@ -1,0 +1,32 @@
+[
+	{
+		"nome": "Dominos pizza",
+		"id": "dominos",
+		"desc": "30% de desconto ",
+		"img": "genau.png"
+	},
+	{
+		"nome": "Quase 2 Lanches",
+		"id": "quase2",
+		"desc": "20% de desconto",
+		"img": "zwei.png"
+	},
+	{
+		"nome": "Milk Shake Mix",
+		"id": "milkshakemix",
+		"desc": "10% de desconto",
+		"img": "af.png"
+	},
+	{
+		"nome": "Açai + Sabor",
+		"id": "acaimaisabor",
+		"desc": "10% de desconto",
+		"img": "af.png"
+	},
+	{
+		"nome": "Fritz",
+		"id": "fritz",
+		"desc": "10% de desconto",
+		"img": "zwei.png"
+	}
+]
