@@ -17,5 +17,15 @@
 		"link": "https://www.splitwise.com/",
 		"play_link": "https://play.google.com/store/apps/details?id=com.Splitwise.SplitwiseMobile&hl=pt_BR",
 		"app_link": "https://itunes.apple.com/us/app/splitwise/id458023433?mt=8"
+	},
+
+	{
+		"id": "guiabolso",
+		"name": "Guia Bolso",
+		"desc": "O Guia Bolso é um aplicativo que te ajuda a ter controle sobre sua vida financeira. Afinal, é muito mais fácil economizar dinheiro sabendo para onde ele está indo.",
+		"img": "guiabolso.png",
+		"link": "https://www.guiabolso.com.br/",
+		"play_link": "https://play.google.com/store/apps/details?id=br.com.guiabolso&hl=pt",
+		"app_link": "https://itunes.apple.com/br/app/guiabolso-empr%C3%A9stimo-e-controle-financeiro/id891087489?mt=8"
 	}
 ]
