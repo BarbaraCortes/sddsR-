@@ -10,10 +10,8 @@
 				sliderCaaso.showSlides();
 
 		    	sliderFederal = new slider("slides_sociofederal", Math.floor((<%=sociofederal.length%> + 2)/3));
-				sliderFederal.showSlides();
-				
-				sliderRest = new slider("slides_rest", <%=restaurantes.length%>);
-				sliderRest.showSlides();
+				sliderFederal.showSlides(); 
+
 			});
 		</script>
 
@@ -159,7 +157,7 @@
 				<h3 style="margin-left: 100px; margin-right: 100px">Descrição</h3>
 				<div class = "col-md-offset-1 col-md-4">
 					<p>
-						O Sócio Federal é nao sei bem ainda.
+						Sócio Federal é o programa de fidelidade do UFSCar. Aqui você terá acesso às vantagens que só o Sócio Federal te proporciona!
 					</p>
 				</div>
 				<div class = "col-md-offset-1 col-md-4">
@@ -213,97 +211,7 @@
 		</div>
 		<br>
 		<br>
-
-		<!-- Sessao de videos -->
-		<div class = "container-fluid" style="background: #DDDDDD; width:100%" id = "videos">
-			<br>
-			<h3 style = "margin-left: 100px"> Vídeos </h3>
-			
-			<div class="slides_vids" style = "width: 100%"> 
-				<% for(var i = 0; i < videos.length; ++i) {%>
-					<% if(i > 0 && i%3 == 0) {%> 
-						</div>
-						<div class="slides_vids" style = "width: 100%"> 
-					<%}%>
-					<div class = "col-md-4">
-						<center>
-							<iframe width="400" height="250" src="<%=videos[i]%>" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen style = "margin: 20px"></iframe>
-						</center>
-					</div>
-				<%}%>
-			</div>
-			<br>
-			<div class = "leftArrow">
-			  	<a onclick="sliderVideos.plusSlides(-1)">
-				    <img name="left arrow"
-				    	src="leftarrow.png"
-				     	alt="leftArrow"
-				     	align="middle"
-				     	style = "width: 50px; height: auto">
-			  	</a>
-			</div>
-
-			<div class = "rightArrow">
-				<a onclick="sliderVideos.plusSlides(1)">
-					<img name="right arrow"
-						src="rightarrow.png"
-						alt="rightArrow"
-						align="middle"
-						style = "width: 50px; height: auto">
-				</a>
-			</div>
-		</div>
-
-		<!-- Sessao de restaurantes -->
-		<div class = "container-fluid" style="background: #FFFFFF; width:100%" id="restaurantes">
-			<h3 style = "margin-left: 100px"> Restaurantes </h3>
-			<%for(var i = 0; i < restaurantes.length; ++i) {%>
-				<div class="slides_rest" style = "width: 100%">
-					<div class = "col-md-3">
-						<center> 
-							<img src="<%= restaurantes[i].img%>" style = "max-width: 50%; height: auto; margin: 20px;">
-						</center>
-						<h4 style = "color: black; text-align: center"> <%= restaurantes[i].name %> </a></h4>
-					</div>
-					<div class = "col-md-5">
-						<h4 style = "margin: 10px; margin-top: 40px"> <%= restaurantes[i].desc %> </h4>
-					</div>
-					<div class = "col-md-3">
-					<a href='<%= restaurantes[i].face_link %>'><img alt='Pagina do Facebook' src='http://www.tenhomaisdiscosqueamigos.com/wp-content/uploads/2015/07/facebook.jpg' style = "width: 40%;position:absolute;  
-							left:15%;
-							margin-top:35px;" /> </a>
-					</div>
-					<div class = "col-md-3">
-					<a href='<%= restaurantes[i].ifood_link %>'><img alt='Link do Ifood' src='https://images-na.ssl-images-amazon.com/images/I/51b3GBnw0UL.png' style = "width: 30%;position:absolute; left:80%;
-							margin-top:25px;"/> </a>
-					</div>
-				</div>
-			<%}%>
-			<br>
-			<br>
-			<div class = "leftArrow">
-			  	<a onclick="sliderRest.plusSlides(-1)">
-				    <img name="left arrow"
-				    	src="leftarrow.png"
-				     	alt="leftArrow"
-				     	align="middle"
-				     	style = "width: 50px; height: auto">
-			  	</a>
-			</div>
-
-			<div class = "rightArrow">
-				<a onclick="sliderRest.plusSlides(1)">
-					<img name="right arrow"
-						src="rightarrow.png"
-						alt="rightArrow"
-						align="middle"
-						style = "width: 50px; height: auto">
-				</a>
-			</div>
-		</div>
-
-		
-
+ 
 
 		<%- include footer.ejs %>
 	</body>

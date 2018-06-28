@@ -1,32 +1,45 @@
 [
 	{
-		"nome": "Genau Idiomas",
-		"id": "genau",
-		"desc": "10% de desconto + isenção da taxa de matrícula",
-		"img": "genau.png"
+		"nome": "Natsumi",
+		"id": "natsumi",
+		"desc": "15% de desconto no rodízio",
+		"img": "natsumi.jpg"
 	},
 	{
-		"nome": "zwei",
-		"id": "zwei",
-		"desc": "isenção da taxa de matrícula",
-		"img": "zwei.png"
+		"nome": "Trem Bão",
+		"id": "trembao",
+		"desc": "Refri na compra de lanche ou prato",
+		"img": "trembao.jpg"
 	},
 	{
-		"nome": "Aliança Francesa",
-		"id": "aliancafrancesa",
-		"desc": "5% de desconto na parcela",
-		"img": "af.png"
+		"nome": "Delivery Much",
+		"id": "deliverymuch",
+		"desc": "10 cupons nos valores de 5,00 para compras acima de 20,00",
+		"img": "dmuch.png"
 	},
 	{
-		"nome": "Aliança Idiomas",
-		"id": "aliancaidiomas",
-		"desc": "5% de desconto na parcela",
-		"img": "af.png"
+		"nome": "Lancheria Shy Moon",
+		"id": "shymoon",
+		"desc": "Refri ou suco",
+		"img": "shymoon.jpg"
 	},
 	{
-		"nome": "zwei",
-		"id": "zwei",
-		"desc": "isenção da taxa de matrícula",
-		"img": "zwei.png"
+		"nome": "Academia Territorio Fit",
+		"id": "territoriofit",
+		"desc": "10% de desconto + isenção da taxa de matrícula e exame médico",
+		"img": "tfit.jpg"
+	},
+	{
+		"nome": "Influx English School",
+		"id": "influx",
+		"desc": "20% de desconto na mensalidade",
+		"img": "influx.gif"
+	},
+	{
+		"nome": "Só Excursão Viagens e Turismo",
+		"id": "soexcursao",
+		"desc": "Passagens e pacotes aéreos nacionais e internacionais 3%, rodoviario 10%, seguro viagem 7%, intercambio 3%",
+		"img": "soexcursao.jpg"
 	}
+	
 ]

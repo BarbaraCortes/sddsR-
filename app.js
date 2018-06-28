@@ -44,5 +44,5 @@ app.get('/bolsasauxilio', function(req, res) {
 	res.render('bolsasauxilio');
 });
 app.get('/associacoes', function(req, res) {
-	res.render('associacoes', {sociocaaso: sociocaaso, sociofederal: sociofederal, videos: videos, restaurantes: restaurantes});
+	res.render('associacoes', {sociocaaso: sociocaaso, sociofederal: sociofederal});
 });
