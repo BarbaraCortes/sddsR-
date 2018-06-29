@@ -3,7 +3,7 @@
 		<%-include bootstrap.ejs %> <!-- inclui o bootstrap -->
 		<script src="js/slider.js"></script>
 		<script type = "text/javascript">
-			var sliderCaaso, sliderFederal, sliderVideos;
+			var sliderCaaso, sliderFederal, sliderVideos, sliderAtleticaaso;
 			
 			$(function() {
 		    	sliderCaaso = new slider("slides_sociocaaso", Math.floor((<%=sociocaaso.length%> + 2)/3));
@@ -11,6 +11,9 @@
 
 		    	sliderFederal = new slider("slides_sociofederal", Math.floor((<%=sociofederal.length%> + 2)/3));
 				sliderFederal.showSlides(); 
+
+				sliderAtleticaaso = new slider("slides_socioatleticaaso", Math.floor((<%=socioatleticaaso.length%> + 2)/3));
+				sliderAtleticaaso.showSlides();
 
 			});
 		</script>
@@ -79,10 +82,10 @@
 				</div>
 				<div class = "col-md-4">
 					<center> 
-						<a href="#restaurantes"><img src="restaurante.png" style = "max-width: 33%; height: auto; margin: 20px" class = "img-logo"></a>
+						<a href="#restaurantes"><img src="atleticaaso.png" style = "max-width: 33%; height: auto; margin: 20px" class = "img-logo"></a>
 					</center>
 					<br>
-					<h3 style="text-align: center"> Restaurantes </h3>
+					<h3 style="text-align: center"> Sócio Atlética Caaso </h3>
 				</div>
 			</div>	
 		</div>
@@ -211,6 +214,63 @@
 		</div>
 		<br>
 		<br>
+
+		<!-- Sessao do socio atletica caaso -->
+		<div class = "container-fluid" id = "socioatleticaaso">
+			<h2 style = "margin-left: 50px"> Sócio Atlética Caaso </h2>
+			<div>
+				<h3 style="margin-left: 100px; margin-right: 100px">Descrição</h3>
+				<div class = "col-md-offset-1 col-md-4">
+					<p>
+						Sócio Atlética Caaso é uma ótima opção para quem é fã de vestir o amarelo para torcer pelos times do Caaso. A anuidade dá direito a vantagens e descontos em produtos e festas organizados pela Atlética Caaso, além de benefícios com os estabelecimentos parceiros. 
+					</p>
+				</div>
+				<div class = "col-md-offset-1 col-md-4">
+					<p>
+						Novos sócios: R$30,00 <br>
+						Renovação: R$25,00
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="container-fluid" style="background: #FFFFFF; width:100%; margin-top: 20px">
+			<div class="slides_sociofederal" style = "width: 100% background-color: #FFFFFF;"> 
+				<% for(var i = 0; i < socioatleticaaso.length; ++i) {%>
+					<% if(i > 0 && i%3 == 0) {%> 
+						</div>
+						<div class="slides_socioatleticaaso" style = "width: 100%; background-color: #FFFFFF"> 
+					<%}%>
+					<div class = "col-md-4">
+						<div class = "col-md-6">
+							<img src = "<%= socioatleticaaso[i].img %>" style="width: 70%; height: auto">
+						</div>
+						<div class = "col-md-6" style="text-align: center">
+							<h4><%= socioatleticaaso[i].nome %></h4>
+							<p><%= socioatleticaaso[i].desc %></p>
+						</div>
+					</div>
+				<%}%>
+			</div>
+			<div class = "leftArrow" style="display: inline-block;">
+			  	<a onclick="sliderAtleticaaso.plusSlides(-1)">
+				    <img name="left arrow"
+				    	src="leftarrow.png"
+				     	alt="leftArrow"
+				     	vertical-align= "center"
+				     	style = "width: 50px; height: auto; display: inline-block;">
+			  	</a>
+			</div>
+
+			<div class = "rightArrow">
+				<a onclick="sliderAtleticaaso.plusSlides(1)">
+					<img name="right arrow"
+						src="rightarrow.png"
+						alt="rightArrow"
+						align="middle"
+						style = "width: 50px; height: auto">
+				</a>
+			</div>
+		</div>
  
 
 		<%- include footer.ejs %>

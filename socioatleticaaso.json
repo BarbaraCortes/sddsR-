@@ -1,0 +1,121 @@
+[
+	 {
+		"nome": "Açai Mania",
+		"id": "acaimania",
+		"desc": "10% de desconto no valor total do pedido para compras na loja física ou delivery grátis para pedidos para entrega.",
+		"img": "acaimania.jpg"
+	},
+	{
+		"nome": "Japa Açai",
+		"id": "japa",
+		"desc": "10% de desconto no açaí self-service. Promoção não cumulativa.",
+		"img": "japa.jpg"
+	},
+	{
+		"nome": "Kamzu Cookie Shop",
+		"id": "kamzu",
+		"desc": "Na compra de 1 bebida grande (quente ou gelada) + 1 cookie ==== segundo cookie com 50% de desconto. Válido para todas as bebidas quentes ou geladas, de tamanho grande. Não válido para café espresso, café duplo ou água. Cookie de menor valor terá desconto de 50%. Não acumulativo com outras promoções: Não é válido na compra do combo do dia, combo do café ou promo compre 6 leve 7. O cookie com desconto não carimba no cartão fidelidade.",
+		"img": "kamzu.jpg"
+	},
+	{
+		"nome": "V8 Distribuidora e Delivery de Bebidas",
+		"id": "v8",
+		"desc": "5% de desconto em produtos da loja.",
+		"img": "v8.jpg"
+	},
+
+	 {
+		"nome": "Golden Clube Gourmet",
+		"id": "golden",
+		"desc": "Frete grátis e 20% de desconto na compra do Passaporte. (De R$50,00 por R$40,00). (Entrar em contato com a Golden pela página do Facebook para conseguir o benefício)",
+		"img": "golden.jpg"
+	},
+	{
+		"nome": "Lual lanches",
+		"id": "lual",
+		"desc": "Na compra de um lanche, o Lual Lanches dará um refrigerante. Válido apenas para loja Lual lanches avenida são carlos. Promoção não cumulativa.",
+		"img": "lual.jpg"
+	}, 
+	{
+		"nome": "Brooks Hamburgueria São Carlos",
+		"id": "brooks",
+		"desc": "Na compra de um lanche ganha um refrigerante refil (Válido somente as terças e quartas-feiras) - Não válido para o lanche kids e consumo apenas no local.",
+		"img": "brooks.jpg"
+	},
+	{
+		"nome": "Le Pinguê São Carlos",
+		"id": "lepingue",
+		"desc": "Na compra de um combo (lanche, batata e maionese) ganhe um refrigerante (Válido de segunda a quinta-feira)",
+		"img": "lepingue.png"
+	},
+	{
+		"nome": "Yo Konno",
+		"id": "yokonno",
+		"desc": "1 mini temaki de nutella ou 8 Hossomakis nas compras acima de R$30,00",
+		"img": "yokonno.jpg"
+	},
+	{
+		"nome": "Macarronato",
+		"id": "macarronato",
+		"desc": "Segundo opcional gratis",
+		"img": "https://static-images.ifood.com.br/image/upload/f_auto,t_low/logosgde/201708041051_44d7da15-b5e9-420b-907c-dbeb33c8a1bd.png",
+		"face_link": "https://www.facebook.com/macarronato/"
+	},
+	{
+		"nome": "Natsumi",
+		"id": "natsumi",
+		"desc": "15% de desconto no rodízio",
+		"img": "natsumi.jpg"
+	},
+	 
+	{
+		"nome": "Delivery Much",
+		"id": "deliverymuch",
+		"desc": "10 cupons nos valores de 5,00 para compras acima de 20,00",
+		"img": "dmuch.png"
+	}, 
+	{
+		"nome": "zwei",
+		"id": "zwei",
+		"desc": "isenção da taxa de matrícula",
+		"img": "zwei.png"
+	}, 
+	{
+		"nome": "Academia Territorio Fit",
+		"id": "territoriofit",
+		"desc": "10% de desconto + isenção da taxa de matrícula e exame médico",
+		"img": "tfit.jpg"
+	}, 
+	{
+		"nome": "On Fit Academia",
+		"id": "onfit",
+		"desc": "Disponibilizará acesso a todas as modalidades oferecidas na academia por apenas R$60,00 mensais, sem precisar aderir a algum plano de fidelidade. São elas: Musculação, Fit Dance, Zumba, Treino Funcional, Muay Thai, Pilates, Combat, Attack, G.A.P, Fit Yoga e Também o nosso Grupo de Corrida e Caminhada.",
+		"img": "onfit.jpg"
+	},
+	{
+		"nome": "Top Suplementos",
+		"id": "top",
+		"desc": "10% de desconto nos produtos da loja.",
+		"img": "top.jpg"
+	},
+	{
+		"nome": "Fantasia e Festas",
+		"id": "ff",
+		"desc": "10% de desconto na locação das fantasias. ",
+		"img": "ff.jpg"
+	},
+	{
+		"nome": "Barbearia Alternativa",
+		"id": "barb",
+		"desc": "10% de desconto no valor dos cortes de cabelo.",
+		"img": "barb.jpg"
+	}, 
+	{
+		"nome": "Auto Escola Interlagos",
+		"id": "interlagos",
+		"desc": "10% de desconto",
+		"img": "interlagos.png"
+	} 
+
+	
+]

@@ -43,28 +43,22 @@
 		"face_link": "https://www.facebook.com/macarronato/"
 	},
 	{
-		"nome": "Genau Idiomas",
-		"id": "genau",
-		"desc": "10% de desconto + isenção da taxa de matrícula",
-		"img": "genau.png"
+		"nome": "Natsumi",
+		"id": "natsumi",
+		"desc": "15% de desconto no rodízio",
+		"img": "natsumi.jpg"
 	},
 	{
-		"nome": "zwei",
-		"id": "zwei",
-		"desc": "isenção da taxa de matrícula",
-		"img": "zwei.png"
+		"nome": "Trem Bão",
+		"id": "trembao",
+		"desc": "Refri na compra de lanche ou prato",
+		"img": "trembao.jpg"
 	},
 	{
-		"nome": "Aliança Francesa",
-		"id": "aliancafrancesa",
-		"desc": "5% de desconto na parcela",
-		"img": "af.png"
-	},
-	{
-		"nome": "Aliança Idiomas",
-		"id": "aliancaidiomas",
-		"desc": "5% de desconto na parcela",
-		"img": "aidiomas.png"
+		"nome": "Delivery Much",
+		"id": "deliverymuch",
+		"desc": "10 cupons nos valores de 5,00 para compras acima de 20,00",
+		"img": "dmuch.png"
 	},
 	{
 		"nome": "Rancho Tropical - Lanches e Porções",
@@ -102,6 +96,32 @@
 		"desc": "5% de desconto na parcela",
 		"img": "daf.jpg"
 	},
+
+	{
+		"nome": "Genau Idiomas",
+		"id": "genau",
+		"desc": "10% de desconto + isenção da taxa de matrícula",
+		"img": "genau.png"
+	},
+	{
+		"nome": "zwei",
+		"id": "zwei",
+		"desc": "isenção da taxa de matrícula",
+		"img": "zwei.png"
+	},
+	{
+		"nome": "Aliança Francesa",
+		"id": "aliancafrancesa",
+		"desc": "5% de desconto na parcela",
+		"img": "af.png"
+	},
+	{
+		"nome": "Aliança Idiomas",
+		"id": "aliancaidiomas",
+		"desc": "5% de desconto na parcela",
+		"img": "aidiomas.png"
+	},
+	
 	{
 		"nome": "Sensual Sex Shop Center",
 		"id": "sensual",
@@ -142,13 +162,31 @@
 		"nome": "Auto Escola Interlagos",
 		"id": "interlagos",
 		"desc": "10% de desconto",
-		"img": "prima.jpg"
-	},  
+		"img": "interlagos.png"
+	}, 
+	{
+		"nome": "Ma-lu Mania Pet Shop",
+		"id": "malu",
+		"desc": "10% de desconto  + isenção da taxa de entrega",
+		"img": "malu.jpg"
+	},
+	{
+		"nome": "Academia Territorio Fit",
+		"id": "territoriofit",
+		"desc": "10% de desconto + isenção da taxa de matrícula e exame médico",
+		"img": "tfit.jpg"
+	}, 
 	{
 		"nome": "King Muay Thai",
 		"id": "king",
 		"desc": "15% de desconto + isenção de matrícula no muay thai e 5,00 na mensalidade de boxe e kung fu",
 		"img": "king.jpg"
-	}
+	},
+	{
+		"nome": "Studio 77",
+		"id": "77",
+		"desc": "20% de desconto",
+		"img": "77.png"
+	} 
 
 ]
