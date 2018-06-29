@@ -14,7 +14,7 @@
 	{
 		"nome": "Kamzu Cookie Shop",
 		"id": "kamzu",
-		"desc": "Na compra de 1 bebida grande (quente ou gelada) + 1 cookie ==== segundo cookie com 50% de desconto. Válido para todas as bebidas quentes ou geladas, de tamanho grande. Não válido para café espresso, café duplo ou água. Cookie de menor valor terá desconto de 50%. Não acumulativo com outras promoções: Não é válido na compra do combo do dia, combo do café ou promo compre 6 leve 7. O cookie com desconto não carimba no cartão fidelidade.",
+		"desc": "Na compra de 1 bebida grande (quente ou gelada) + 1 cookie --> segundo cookie com 50% de desconto.",
 		"img": "kamzu.jpg"
 	},
 	{
@@ -23,11 +23,10 @@
 		"desc": "5% de desconto em produtos da loja.",
 		"img": "v8.jpg"
 	},
-
-	 {
+	{
 		"nome": "Golden Clube Gourmet",
 		"id": "golden",
-		"desc": "Frete grátis e 20% de desconto na compra do Passaporte. (De R$50,00 por R$40,00). (Entrar em contato com a Golden pela página do Facebook para conseguir o benefício)",
+		"desc": "Frete grátis e 20% de desconto na compra do Passaporte. (Entrar em contato com a Golden pela página do Facebook para conseguir o benefício)",
 		"img": "golden.jpg"
 	},
 	{
@@ -39,7 +38,7 @@
 	{
 		"nome": "Brooks Hamburgueria São Carlos",
 		"id": "brooks",
-		"desc": "Na compra de um lanche ganha um refrigerante refil (Válido somente as terças e quartas-feiras) - Não válido para o lanche kids e consumo apenas no local.",
+		"desc": "Na compra de um lanche ganha um refrigerante refil. (Válido somente às terças e quartas para consumo no local e não válido para o lanche kids)",
 		"img": "brooks.jpg"
 	},
 	{
@@ -89,7 +88,7 @@
 	{
 		"nome": "On Fit Academia",
 		"id": "onfit",
-		"desc": "Disponibilizará acesso a todas as modalidades oferecidas na academia por apenas R$60,00 mensais, sem precisar aderir a algum plano de fidelidade. São elas: Musculação, Fit Dance, Zumba, Treino Funcional, Muay Thai, Pilates, Combat, Attack, G.A.P, Fit Yoga e Também o nosso Grupo de Corrida e Caminhada.",
+		"desc": "Disponibilizará acesso a todas as modalidades oferecidas na academia por apenas R$60,00 mensais, sem precisar aderir a algum plano de fidelidade.",
 		"img": "onfit.jpg"
 	},
 	{
@@ -116,6 +115,4 @@
 		"desc": "10% de desconto",
 		"img": "interlagos.png"
 	} 
-
-	
 ]
