@@ -91,11 +91,19 @@
 					<% for(var i = 0; i < bolsas_usp.length; ++i) { %>
 						<hr style = "border-color: #888888">
 						<div class = "post">
-							<h3> <%= bolsas_usp[i].titulo %> </h3>
-							<p> <%= bolsas_usp[i].desc %> </p>
+							<h3> <%- bolsas_usp[i].titulo %> </h3>
+							<p> <%- bolsas_usp[i].desc %> </p>
+							<%if(bolsas_usp[i].bullets.length > 0) {%>
+								<br>
+								<lu>
+									<% for(var j = 0; j < bolsas_usp[i].bullets.length; ++j) {%>
+										<li> <%- bolsas_usp[i].bullets[j] %> </li>
+									<%}%>
+								</lu>
+							<%}%>
 							<br><br>
-							<i style="font-size: 12pt"> Mais informações: <a href="google.com"> <%=bolsas_usp[i].link%> </a> </i> <br>
-							<i style="font-size: 12pt"> Última atualização: <%=bolsas_usp[i].atualizado%>  </i>
+							<i style="font-size: 12pt"> Mais informações: <a href="google.com"> <%-bolsas_usp[i].link%> </a> </i> <br>
+							<i style="font-size: 12pt"> Última atualização: <%-bolsas_usp[i].atualizado%>  </i>
 						</div>
 					<%}%>
 					<br>
@@ -108,11 +116,19 @@
 					<% for(var i = 0; i < bolsas_ufscar.length; ++i) { %>
 						<hr style = "border-color: #888888">
 						<div class = "post">
-							<h3> <%= bolsas_ufscar[i].titulo %> </h3>
-							<p> <%= bolsas_ufscar[i].desc %> </p>
+							<h3> <%- bolsas_ufscar[i].titulo %> </h3>
+							<p> <%- bolsas_ufscar[i].desc %> </p>
+							<%if(bolsas_ufscar[i].bullets.length > 0) {%>
+								<br>
+								<lu>
+									<% for(var j = 0; j < bolsas_ufscar[i].bullets.length; ++j) {%>
+										<li> <%- bolsas_ufscar[i].bullets[j] %> </li>
+									<%}%>
+								</lu>
+							<%}%>
 							<br><br>
-							<i style="font-size: 12pt"> Mais informações: <a href="google.com"> <%=bolsas_ufscar[i].link%> </a> </i> <br>
-							<i style="font-size: 12pt"> Última atualização: <%=bolsas_ufscar[i].atualizado%>  </i>
+							<i style="font-size: 12pt"> Mais informações: <a href="google.com"> <%-bolsas_ufscar[i].link%> </a> </i> <br>
+							<i style="font-size: 12pt"> Última atualização: <%-bolsas_ufscar[i].atualizado%>  </i>
 						</div>
 					<%}%>
 					<br>
@@ -125,11 +141,19 @@
 					<% for(var i = 0; i < bolsas_ifsp.length; ++i) { %>
 						<hr style = "border-color: #888888">
 						<div class = "post">
-							<h3> <%= bolsas_ifsp[i].titulo %> </h3>
-							<p> <%= bolsas_ifsp[i].desc %> </p>
+							<h3> <%- bolsas_ifsp[i].titulo %> </h3>
+							<p> <%- bolsas_ifsp[i].desc %> </p>
+							<%if(bolsas_ifsp[i].bullets.length > 0) {%>
+								<br>
+								<lu>
+									<% for(var j = 0; j < bolsas_ifsp[i].bullets.length; ++j) {%>
+										<li> <%- bolsas_ifsp[i].bullets[j] %> </li>
+									<%}%>
+								</lu>
+							<%}%>
 							<br><br>
-							<i style="font-size: 12pt"> Mais informações: <a href="google.com"> <%=bolsas_ifsp[i].link%> </a> </i> <br>
-							<i style="font-size: 12pt"> Última atualização: <%=bolsas_ifsp[i].atualizado%>  </i>
+							<i style="font-size: 12pt"> Mais informações: <a href="google.com"> <%-bolsas_ifsp[i].link%> </a> </i> <br>
+							<i style="font-size: 12pt"> Última atualização: <%-bolsas_ifsp[i].atualizado%>  </i>
 						</div>
 					<%}%>
 					<br>
@@ -142,11 +166,19 @@
 					<% for(var i = 0; i < bolsas_ic.length; ++i) { %>
 						<hr style = "border-color: #888888">
 						<div class = "post">
-							<h3> <%= bolsas_ic[i].titulo %> </h3>
-							<p> <%= bolsas_ic[i].desc %> </p>
+							<h3> <%- bolsas_ic[i].titulo %> </h3>
+							<p> <%- bolsas_ic[i].desc %> </p>
+							<%if(bolsas_ic[i].bullets.length > 0) {%>
+								<br>
+								<lu>
+									<% for(var j = 0; j < bolsas_ic[i].bullets.length; ++j) {%>
+										<li> <%- bolsas_ic[i].bullets[j] %> </li>
+									<%}%>
+								</lu>
+							<%}%>
 							<br><br>
-							<i style="font-size: 12pt"> Mais informações: <a href="google.com"> <%=bolsas_ic[i].link%> </a> </i> <br>
-							<i style="font-size: 12pt"> Última atualização: <%=bolsas_ic[i].atualizado%>  </i>
+							<i style="font-size: 12pt"> Mais informações: <a href="google.com"> <%-bolsas_ic[i].link%> </a> </i> <br>
+							<i style="font-size: 12pt"> Última atualização: <%-bolsas_ic[i].atualizado%>  </i>
 						</div>
 					<%}%>
 					<br>
@@ -159,11 +191,19 @@
 					<% for(var i = 0; i < bolsas_intercambio.length; ++i) { %>
 						<hr style = "border-color: #888888">
 						<div class = "post">
-							<h3> <%= bolsas_intercambio[i].titulo %> </h3>
-							<p> <%= bolsas_intercambio[i].desc %> </p>
+							<h3> <%- bolsas_intercambio[i].titulo %> </h3>
+							<p> <%- bolsas_intercambio[i].desc %> </p>
+							<%if(bolsas_intercambio[i].bullets.length > 0) {%>
+								<br>
+								<lu>
+									<% for(var j = 0; j < bolsas_intercambio[i].bullets.length; ++j) {%>
+										<li> <%- bolsas_intercambio[i].bullets[j] %> </li>
+									<%}%>
+								</lu>
+							<%}%>
 							<br><br>
-							<i style="font-size: 12pt"> Mais informações: <a href="google.com"> <%=bolsas_intercambio[i].link%> </a> </i> <br>
-							<i style="font-size: 12pt"> Última atualização: <%=bolsas_intercambio[i].atualizado%>  </i>
+							<i style="font-size: 12pt"> Mais informações: <a href="google.com"> <%-bolsas_intercambio[i].link%> </a> </i> <br>
+							<i style="font-size: 12pt"> Última atualização: <%-bolsas_intercambio[i].atualizado%>  </i>
 						</div>
 					<%}%>
 					<br>

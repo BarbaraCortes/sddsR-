@@ -2,8 +2,8 @@
 	{
 		"titulo" : "Bolsa Monitoria",
 		
-		"desc" : "Anual. 400,00 por mês. Inscrição em no final de janeiro, inicio de fevereiro. 20 horas semanais, 16 presenciais no IF 4 em local a definir.",
-
+		"desc" : "A bolsa de monitoria destina-se a alunos com bom rendimento acadêmico e carga horária disponível. Consiste em 20 horas semanais, sendo 16 presenciais no IF e 4 em local a definir com o professor responsável.",
+		"bullets" : ["A bolsa é anual e a inscrição em no final de janeiro, inicio de fevereiro", "Valor: R$400,00 mensais"],
 		"link" : "google.com",
 		"atualizado" : "29/06/18" 
 	},
@@ -11,8 +11,8 @@
 	{
 		"titulo" : "Programa de Assistencia Estudantil",
 		
-		"desc" : "Auxilio alimentacao, creche, material didatico, auxilio moradia, auxilio saude, auxilio transporte. ",
-
+		"desc" : "O Programa de Assistência estudantil é financiado pelo governo e visa a auxiliar os alunos na questão financeira em diversos campos.Ele engloba auxílio alimentacao, creche, material didatico, auxílio moradia, auxílio saude e auxílio transporte.",
+		"bullets" : [],
 		"link" : "https://scl.ifsp.edu.br/index.php/assitencia-estudantil",
 		"atualizado" : "29/06/18" 
 	}

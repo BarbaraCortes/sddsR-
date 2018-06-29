@@ -2,17 +2,17 @@
 	{
 		"titulo" : "USP",
 		
-		"desc" : "Sistema Mundus - editais. CRInt, CCint ...",
-
-		"link" : "google.com",
+		"desc" : "A principal fonte de informações sobre vagas e bolsas de intercâmbio para alunos da USP é o <a href=\"https://uspdigital.usp.br/mundus/editalintercambiopublicoListar?codmnu=2070\">Sistema Mundus<\/a>. Nele podem ser encontrados inúmeros editais disponíveis para intercâmbios. Além disso, cada instituto possui uma comissão específica que cuida dos editais locais, são algumas delas: CRInt do ICMC e CCint da EESC.",
+		"bullets" : [],
+		"link" : "https://uspdigital.usp.br/mundus/editalintercambiopublicoListar?codmnu=2070",
 		"atualizado" : "29/06/18" 
 	},
 
 	{
 		"titulo" : "UFSCAR",
 		
-		"desc" : "SRInter-UFSCar",
-
+		"desc" : "A Secretaria Geral de Relações Internacionais da UFSCar (SRInter-UFSCar) fica responsável por praticamente todos os editais e informações acerca de intercâmbios disponíveis a seus alunos.",
+		"bullets" : [],
 		"link" : "https://www2.ufscar.br/estudante/www.srinter.ufscar.br",
 		"atualizado" : "29/06/18" 
 	}
