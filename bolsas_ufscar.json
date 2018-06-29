@@ -1,0 +1,28 @@
+[
+	{
+		"titulo" : "Bolsa Alimentação",
+		
+		"desc" : "O bolsista terá direito a duas refeições diárias, 1 almoço e 1 jantar, de segunda a sexta-feira e almoço aos sábados. Em São Carlos, caso ocorra o fechamento do Restaurante Universitário, por qualquer motivo (feriados prolongados, greve, manutenção etc) será fornecido alimentos in natura. Nestas situações, o estudante interessado em retirar os alimentos in natura deverá ficar atento aos comunicados e informes que serão afixados no RU, nas moradias estudantis e também veiculados no inforede da UFSCar e pelos emails. Duração de 12 meses. Para alunos de primeira graduação dos cursos presenciais da UFSCar.",
+
+		"link" : "google.com",
+		"atualizado" : "29/06/18" 
+	},
+
+	{
+		"titulo" : "Bolsa Moradia",
+		
+		"desc" : "Auxílio financeiro para subsidiar suas despesas com moradia (aluguel, água, luz, IPTU, gás e transporte).Somente os alunos de primeira graduação dos cursos presenciais da UFSCar podem pedir o Auxílio Moradia. O valor da bolsa moradia em dinheiro para estudantes sem filhos é de R$ 300,00 e com filhos (observar as normas) de R$ 400,00 (bolsa moradia mãe/pai). Duração de até 1 ano.",
+
+		"link" : "google.com",
+		"atualizado" : "29/06/18" 
+	},
+
+	{
+		"titulo" : "Bolsa Atividade",
+		
+		"desc" : "Aluno desenvolve 8 horas semanais de atividades, junto aos departamentos acadêmicos ou administrativos da Instituição. Esta bolsa é prioritária para calouros de primeira graduação e as vagas remanescentes podem ser distribuídas para veteranos de graduação. Envolvimento no projeto deverá ser de 8 (oito) horas semanais. A bolsa tem o valor mensal de R$180,00. A duração da bolsa atividade é de até oito meses, sendo quatro meses no primeiro semestre e quatro, no segundo semestre. PS: As bolsas de monitoria são distribuídas pelos centros acadêmicos conforme aprovação da Comissão para Assuntos de Natureza Orçamentária e Administrativa - CANOA.",
+
+		"link" : "google.com",
+		"atualizado" : "29/06/18" 
+	}
+]

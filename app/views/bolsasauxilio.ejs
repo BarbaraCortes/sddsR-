@@ -1,6 +1,7 @@
 <html>
 	<head>
 		<%-include bootstrap.ejs %> <!-- inclui o bootstrap -->
+		<script type = "text/javascript" src = "js/auxilio.js" > </script>
 		<style type="text/css">
 			body {
 				background-color: #DDDDDD;
@@ -17,6 +18,13 @@
 				height: auto;
 				margin: 15px;
 			}
+
+			.post {
+				width: 100%;
+				text-align: justify;
+				font-size: 15pt;
+			}
+
 		</style>
 		<title> BOLSAS AUXÍLIO </title>
 	</head>
@@ -26,150 +34,143 @@
 				<img src="barra.jpg" style = "max-width: 100%; height: auto;" class = "img-cartaopostal">
 			</div>
 			<!-- Sessao de icones -->
-			<div class = "container">
-				<br>
-				<div class="row">
-					<div class = "col-md-1"></div>	
-					<div class = "col-md-2">	
-						<center>
-							<a href="#usp"><img src="uspmenor.png" style = "max-width: 50%; height: auto; margin: 20px" class = "img-logo"></a>
-						</center>
-						
-						<h3 style="text-align: center"> USP </h3>
-					</div>
-					<div class = "col-md-2">
-						<center> 
-							<a href = "#uf20pxscar"><img src="ufscarmenor.png" style = "max-width: 50%; height: auto; margin: 20px" class = "img-logo"></a>
-						</center>
-						
-						<h3 style="text-align: center"> UFSCAR </h3>
-					</div>
+			<div style = "background-color: #EEEEEE; border-bottom: solid #888888 1px">
+				<div class = "container">
+					<br>
+					<div class="row">
+						<div class = "col-md-1"></div>	
+						<div class = "col-md-2">	
+							<center>
+								<a style = "cursor: pointer" onclick="changeSelection('usp')"><img src="uspmenor.png" style = "max-width: 50%; height: auto; margin: 20px" class = "img-logo"></a>
+							</center>
+							
+							<h3 style="text-align: center"> USP </h3>
+						</div>
+						<div class = "col-md-2">
+							<center> 
+								<a style = "cursor: pointer" onclick="changeSelection('ufscar')"><img src="ufscarmenor.png" style = "max-width: 50%; height: auto; margin: 20px" class = "img-logo"></a>
+							</center>
+							
+							<h3 style="text-align: center"> UFSCAR </h3>
+						</div>
+
+							<div class = "col-md-2">
+							<center>
+								<a style = "cursor: pointer" onclick="changeSelection('ifsp')"><img src="ifsp.png" style = "max-width: 50%; height: auto; margin: 20px" class = "img-logo"></a>
+							</center>
+							
+							<h3 style="text-align: center"> IFSP </h3>
+						</div>
 
 						<div class = "col-md-2">
-						<center>
-							<a href="#ifsp"><img src="ifsp.png" style = "max-width: 50%; height: auto; margin: 20px" class = "img-logo"></a>
-						</center>
+							<center>
+								<a style = "cursor: pointer" onclick="changeSelection('ic')"><img src="ic.png" style = "max-width: 50%; height: auto; margin: 20px" class = "img-logo"></a>
+							</center>
+							
+							<h3 style="text-align: center"> INICIAÇÃO CIENTÍFICA </h3>
+						</div>
 						
-						<h3 style="text-align: center"> IFSP </h3>
-					</div>
-
-					<div class = "col-md-2">
-						<center>
-							<a href="#ic"><img src="ic.png" style = "max-width: 50%; height: auto; margin: 20px" class = "img-logo"></a>
-						</center>
-						
-						<h3 style="text-align: center"> INICIAÇÃO CIENTÍFICA </h3>
-					</div>
-					
-					<div class = "col-md-2">
-						<center>
-							<a href="#intercambio"><img src="mundo.png" style = "max-width: 50%; height: auto; margin: 20px" class = "img-logo"></a>
-						</center>
-						
-						<h3 style="text-align: center"> INTERCÂMBIO </h3>
-					</div>
-					<div class = "col-md-1"></div>
-				</div>	
+						<div class = "col-md-2">
+							<center>
+								<a style = "cursor: pointer" onclick="changeSelection('intercambio')"><img src="mundo.png" style = "max-width: 50%; height: auto; margin: 20px" class = "img-logo"></a>
+							</center>
+							
+							<h3 style="text-align: center"> INTERCÂMBIO </h3>
+						</div>
+						<div class = "col-md-1"></div>
+					</div>	
+				</div>
 			</div>
 			<br>
 
-			<!-- Sessao da usp -->
-			<div class = "container-fluid" style="background: #DDDDDD">
-				<div class="row" id = "usp">
-					<h3 style = "margin-left: 600px"> USP </h3>
-					<div class = "col-md-6">
-
-						<%-include descricao_usp.ejs %>
-						
-					</div>
-					<div class = "col-md-6">
-
-						<%-include descricao_usp2.ejs %>
-						
-					</div>
-
+			
+			<div class = "container">
+				<!-- Bolsas da USP -->
+				<div class = "bolsas" id = "usp">
+					<h2> USP </h2>
+					<% for(var i = 0; i < bolsas_usp.length; ++i) { %>
+						<hr style = "border-color: #888888">
+						<div class = "post">
+							<h3> <%= bolsas_usp[i].titulo %> </h3>
+							<p> <%= bolsas_usp[i].desc %> </p>
+							<br><br>
+							<i style="font-size: 12pt"> Mais informações: <a href="google.com"> <%=bolsas_usp[i].link%> </a> </i> <br>
+							<i style="font-size: 12pt"> Última atualização: <%=bolsas_usp[i].atualizado%>  </i>
+						</div>
+					<%}%>
+					<br>
 				</div>
-				<br>
-			</div>
-			<!-- Sessao da ufscar -->
-			<div class = "container-fluid" style="background: #DDDDDD; width:100%">
-				<br>
-				<h3 style = "margin-left: 550px"> UFSCAR </h3>
-				<div class="row" id="ufscar">
-					<div class = "col-md-6">
-						<%-include descricao_usfcar.ejs %>
-						
-					</div>
-					<div class = "col-md-6">
+				
 
-						<%-include descricao_usfcar2.ejs %>
-						
-					</div>
-
-
-					</br>
-					</div>
-   				</div>
-   				<br>
-  			</div>
-
-  					<!-- Sessao do ifsp -->
-			<div class = "container-fluid" style="background: #DDDDDD; width:100%">
-				<br>
-				<h3 style = "margin-left: 550px"> IFSP </h3>
-				<div class="row" id="ifsp">
-					<div class = "col-md-6">
-						<%-include descricao_ifsp.ejs %>
-						
-					</div>
-					<div class = "col-md-6">
-
-						<%-include descricao_ifsp2.ejs %>
-						
-					</div>
-
-
-					</br>
-					</div>
-   				</div>
-   				<br>
-  			</div>
-
-  			<!-- Sessao da ic -->
-			<div class = "container-fluid" style="background: #DDDDDD">
-				<div class="row" id = "ic">
-					<h3 style = "margin-left: 500px"> INICIAÇÃO CIENTÍFICA </h3>
-					<div class = "col-md-6">
-
-						<%-include descricao_ic.ejs %>
-						
-					</div>
-					<div class = "col-md-6">
-
-						<%-include descricao_ic2.ejs %>
-						
-					</div>
-
+				<!-- Bolsas da UFSCAR -->
+				<div class = "bolsas" id = "ufscar">
+					<h2> UFSCAR </h2>
+					<% for(var i = 0; i < bolsas_ufscar.length; ++i) { %>
+						<hr style = "border-color: #888888">
+						<div class = "post">
+							<h3> <%= bolsas_ufscar[i].titulo %> </h3>
+							<p> <%= bolsas_ufscar[i].desc %> </p>
+							<br><br>
+							<i style="font-size: 12pt"> Mais informações: <a href="google.com"> <%=bolsas_ufscar[i].link%> </a> </i> <br>
+							<i style="font-size: 12pt"> Última atualização: <%=bolsas_ufscar[i].atualizado%>  </i>
+						</div>
+					<%}%>
+					<br>
 				</div>
-				<br>
-			</div>
+				
 
-					<!-- Sessao da intercambio -->
-			<div class = "container-fluid" style="background: #DDDDDD">
-				<div class="row" id = "intercambio">
-					<h3 style = "margin-left: 500px"> INTERCÂMBIO </h3>
-					<div class = "col-md-6">
-
-						<%-include descricao_intercambio.ejs %>
-						
-					</div>
+				<!-- Bolsas do IFSP -->
+				<div class = "bolsas" id = "ifsp">
+					<h2> IFSP </h2>
+					<% for(var i = 0; i < bolsas_ifsp.length; ++i) { %>
+						<hr style = "border-color: #888888">
+						<div class = "post">
+							<h3> <%= bolsas_ifsp[i].titulo %> </h3>
+							<p> <%= bolsas_ifsp[i].desc %> </p>
+							<br><br>
+							<i style="font-size: 12pt"> Mais informações: <a href="google.com"> <%=bolsas_ifsp[i].link%> </a> </i> <br>
+							<i style="font-size: 12pt"> Última atualização: <%=bolsas_ifsp[i].atualizado%>  </i>
+						</div>
+					<%}%>
+					<br>
 				</div>
-				<br>
-			</div>
+				
 
+				<!-- Bolsas de IC -->
+				<div class = "bolsas" id = "ic">
+					<h2> Iniciação Científica </h2>
+					<% for(var i = 0; i < bolsas_ic.length; ++i) { %>
+						<hr style = "border-color: #888888">
+						<div class = "post">
+							<h3> <%= bolsas_ic[i].titulo %> </h3>
+							<p> <%= bolsas_ic[i].desc %> </p>
+							<br><br>
+							<i style="font-size: 12pt"> Mais informações: <a href="google.com"> <%=bolsas_ic[i].link%> </a> </i> <br>
+							<i style="font-size: 12pt"> Última atualização: <%=bolsas_ic[i].atualizado%>  </i>
+						</div>
+					<%}%>
+					<br>
+				</div>
+				
+
+				<!-- Bolsas de intercambio -->
+				<div class = "bolsas" id = "intercambio">
+					<h2> INTERCAMBIO </h2>
+					<% for(var i = 0; i < bolsas_intercambio.length; ++i) { %>
+						<hr style = "border-color: #888888">
+						<div class = "post">
+							<h3> <%= bolsas_intercambio[i].titulo %> </h3>
+							<p> <%= bolsas_intercambio[i].desc %> </p>
+							<br><br>
+							<i style="font-size: 12pt"> Mais informações: <a href="google.com"> <%=bolsas_intercambio[i].link%> </a> </i> <br>
+							<i style="font-size: 12pt"> Última atualização: <%=bolsas_intercambio[i].atualizado%>  </i>
+						</div>
+					<%}%>
+					<br>
+				</div>
+				
+			</div>
 
 			<%- include footer.ejs %>
-<!-- 		</
-		</div> -->
 	</body>
 </html>

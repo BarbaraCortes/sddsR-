@@ -1,0 +1,55 @@
+[
+	{
+		"titulo" : "Apoio Moradia",
+		
+		"desc" : "Consiste em vaga gratuita na moradia da Universidade. O campus dispõe de cinco blocos de alojamento, totalizando 252 vagas. A definição da vaga é feita por meio de processo seletivo realizado pela Comissão de Admissão do Alojamento Estudantil – CAAE.",
+
+		"link" : "google.com",
+		"atualizado" : "29/06/18" 
+	},
+
+	{
+		"titulo" : "Auxílio Moradia",
+		
+		"desc" : "É o auxílio financeiro mensal destinado aos alunos com alta vulnerabilidade socioeconômica (perfil de maior necessidade de atendimento) que não foram contemplados com a vaga na moradia universitária. A definição do auxílio é feita pelo processo seletivo do PAPFE e pelo processo seletivo realizado pela Comissão de Admissão do Alojamento Estudantil – CAAE. Ajuda de custo no valor de R$ 400,00 por até 12 meses. Limite de renda per capita de 3 salários mínimos vigentes. Não cumulativo com apoio transporte.",
+
+		"link" : "google.com",
+		"atualizado" : "29/06/18" 
+	},
+
+	{
+		"titulo" : "Apoio Transporte",
+		
+		"desc" : "Auxílio financeiro mensal, durante o período letivo (benefício não creditado nos meses de janeiro e julho), para deslocamento do aluno da residência até a Universidade. Não se trata de auxílio para deslocamento do aluno entre a cidade de origem e a cidade de São Carlos. Válido por até 12 meses. Não cumulativo com auxílio moradia financeiro. Valor R$ 200,00.",
+
+		"link" : "google.com",
+		"atualizado" : "29/06/18" 
+	},
+
+	{
+		"titulo" : "Apoio Alimentação",
+		
+		"desc" : "Isenção do pagamento de refeições nos Restaurantes Universitários. Válido por até 12 meses. Limite de renda per capita de 2 salários mínimos vigentes..",
+
+		"link" : "google.com",
+		"atualizado" : "29/06/18" 
+	},
+
+	{
+		"titulo" : "Apoio Livros",
+		
+		"desc" : "Consiste em créditos disponibilizados para aquisição de livros nas Editoras da USP (Edusp) durante o período letivo (benefício não creditado nos meses de janeiro e julho). O aluno pode ser contemplado com a bolsa por 2 anos (consecutivos ou não); cumprido esse período sua inscrição é automaticamente bloqueada pelo sistema. Limite de renda per capita de 2 salários mínimos vigentes. Válido por até 12 meses. Valor R$ 150,00 em créditos.",
+
+		"link" : "google.com",
+		"atualizado" : "29/06/18" 
+	},
+
+	{
+		"titulo" : "Monitoria",
+		
+		"desc" : "O Programa de Estímulo ao Ensino de Graduação (PEEG) é voltado a estudantes de todos os cursos da USP, que tenham bom rendimento escolar, e destacado desempenho na disciplina escolhida para desenvolver as atividades de monitoria. O PEEG atenderá a uma turma, ou a um conjunto de turmas de uma mesma disciplina, que receberá o monitor. Caberá à Comissão de Graduação receber e avaliar os projetos de cada disciplina para proceder à distribuição de bolsas. Para concorrer a uma vaga de monitor, o aluno deve se inscrever no projeto da disciplina cujo conteúdo ele domina por ter cursado a própria disciplina ou equivalente. A monitoria deve ser desenvolvida necessariamente sob supervisão de um dos docentes da disciplina. Semestral. Bolsa de 400,00 por mês. Duração de 4 meses.",
+
+		"link" : "google.com",
+		"atualizado" : "29/06/18" 
+	}
+]
