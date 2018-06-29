@@ -45,6 +45,10 @@ var bolsas_ic = JSON.parse(contents);
 contents = fs.readFileSync("bolsas_intercambio.json");
 var bolsas_intercambio = JSON.parse(contents);
 
+
+contents = fs.readFileSync("socioatleticaaso.json");
+var socioatleticaaso = JSON.parse(contents);
+
 /* Se uma requisicao get no diretorio '/' for recebida, renderiza a index.ejs (pagina inicial) */
 app.get('/', function(req, res) {
 	res.render('index');
@@ -60,5 +64,5 @@ app.get('/bolsasauxilio', function(req, res) {
 	res.render('bolsasauxilio', {bolsas_usp: bolsas_usp, bolsas_ufscar: bolsas_ufscar, bolsas_ifsp: bolsas_ifsp, bolsas_ic: bolsas_ic, bolsas_intercambio: bolsas_intercambio});
 });
 app.get('/associacoes', function(req, res) {
-	res.render('associacoes', {sociocaaso: sociocaaso, sociofederal: sociofederal});
+	res.render('associacoes', {sociocaaso: sociocaaso, sociofederal: sociofederal, socioatleticaaso: socioatleticaaso});
 });

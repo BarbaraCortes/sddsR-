@@ -1,5 +1,48 @@
 [
 	{
+		"nome": "Dominos pizza",
+		"id": "dominos",
+		"desc": "30% de desconto ",
+		"img": "dominos.png"
+	},
+	{
+		"nome": "Quase 2 Lanches",
+		"id": "quase2",
+		"desc": "20% de desconto",
+		"img": "quasedois.png"
+	},
+	{
+		"nome": "Milk Shake Mix",
+		"id": "milkshakemix",
+		"desc": "10% de desconto",
+		"img": "milksmix.png"
+	},
+	{
+		"nome": "Açai + Sabor",
+		"id": "acai+sabor",
+		"desc": "10% de desconto",
+		"img": "acaimaissabor.jpg"
+	},
+	{
+		"nome": "Fritz",
+		"id": "fritz",
+		"desc": "10% de desconto",
+		"img": "fritz.png"
+	},
+	{
+		"nome": "Yo Konno",
+		"id": "yokonno",
+		"desc": "1 mini temaki de nutella ou 8 Hossomakis nas compras acima de R$30,00",
+		"img": "yokonno.jpg"
+	},
+	{
+		"nome": "Macarronato",
+		"id": "macarronato",
+		"desc": "Segundo opcional gratis",
+		"img": "https://static-images.ifood.com.br/image/upload/f_auto,t_low/logosgde/201708041051_44d7da15-b5e9-420b-907c-dbeb33c8a1bd.png",
+		"face_link": "https://www.facebook.com/macarronato/"
+	},
+	{
 		"nome": "Natsumi",
 		"id": "natsumi",
 		"desc": "15% de desconto no rodízio",
@@ -24,16 +67,143 @@
 		"img": "shymoon.jpg"
 	},
 	{
-		"nome": "Academia Territorio Fit",
-		"id": "territoriofit",
-		"desc": "10% de desconto + isenção da taxa de matrícula e exame médico",
-		"img": "tfit.jpg"
+		"nome": "Rancho Tropical - Lanches e Porções",
+		"id": "ranchotropical",
+		"desc": "10% de desconto",
+		"img": "ranchotropical.jpg"
+	},
+	{
+		"nome": "Rangá Restaurante",
+		"id": "ranga",
+		"desc": "10% de desconto ",
+		"img": "ranga.png"
+	},
+	{
+		"nome": "Giraffas",
+		"id": "giraffas",
+		"desc": "Refri ou suco na compra de uma refeição",
+		"img": "giraffas.png"
+	},
+	{
+		"nome": "Corujão Lanches",
+		"id": "corujao",
+		"desc": "Suco de 500ml na compra de um lanche, exceto dogs e promoções",
+		"img": "corujao.jpg"
+	},
+	{
+		"nome": "Frino Doces e Gelatos",
+		"id": "frino",
+		"desc": "Desconto de 1 real em gelatos, bolos ou tortas",
+		"img": "frino.png"
+	},
+	{
+		"nome": "Daf Institut",
+		"id": "daf",
+		"desc": "5% de desconto na parcela",
+		"img": "daf.jpg"
+	},
+	
+	{
+		"nome": "Genau Idiomas",
+		"id": "genau",
+		"desc": "10% de desconto + isenção da taxa de matrícula",
+		"img": "genau.png"
+	},
+	{
+		"nome": "zwei",
+		"id": "zwei",
+		"desc": "isenção da taxa de matrícula",
+		"img": "zwei.png"
+	},
+	{
+		"nome": "Aliança Francesa",
+		"id": "aliancafrancesa",
+		"desc": "5% de desconto na parcela",
+		"img": "af.png"
+	},
+	{
+		"nome": "Aliança Idiomas",
+		"id": "aliancaidiomas",
+		"desc": "5% de desconto na parcela",
+		"img": "aidiomas.png"
 	},
 	{
 		"nome": "Influx English School",
 		"id": "influx",
 		"desc": "20% de desconto na mensalidade",
 		"img": "influx.gif"
+	},
+	{
+		"nome": "Academia Territorio Fit",
+		"id": "territoriofit",
+		"desc": "10% de desconto + isenção da taxa de matrícula e exame médico",
+		"img": "tfit.jpg"
+	},
+	{
+		"nome": "Academia Vibração",
+		"id": "vibracao",
+		"desc": "12% de desconto na mensalidade",
+		"img": "vibracao.jpg"
+	},
+	{
+		"nome": "King Muay Thai",
+		"id": "king",
+		"desc": "15% de desconto + isenção de matrícula no muay thai e 5,00 na mensalidade de boxe e kung fu",
+		"img": "king.jpg"
+	},
+	{
+		"nome": "Studio 77",
+		"id": "77",
+		"desc": "20% de desconto",
+		"img": "77.png"
+	},
+	{
+		"nome": "Sensual Sex Shop Center",
+		"id": "sensual",
+		"desc": "10% de desconto",
+		"img": "sensual.jpg"
+	},
+	{
+		"nome": "Lava Rapido Auto Brilho",
+		"id": "autobrilho",
+		"desc": "10% de desconto, exceto em promoções",
+		"img": "autobrilho.jpg"
+	},
+	{
+		"nome": "Chaves carimbos & cia",
+		"id": "ccc",
+		"desc": "Desconto de 10% em chaves 5% em carimbos",
+		"img": "ccc.jpg"
+	},
+	{
+		"nome": "Optica Objetiva ",
+		"id": "objetiva",
+		"desc": "25% a vista ou 20% parcelado em até 5x sem juros",
+		"img": "objetiva.jpg"
+	},
+	{
+		"nome": "Parisi Hotel",
+		"id": "parisi",
+		"desc": "30% de desconto",
+		"img": "parisi..png"
+	},
+	{
+		"nome": "Prima clean lavanderia express",
+		"id": "prima",
+		"desc": "10% de desconto",
+		"img": "prima.jpg"
+	}, 
+	{
+		"nome": "Auto Escola Interlagos",
+		"id": "interlagos",
+		"desc": "10% de desconto",
+		"img": "interlagos.png"
+	}, 
+	{
+		"nome": "Ma-lu Mania Pet Shop",
+		"id": "malu",
+		"desc": "10% de desconto  + isenção da taxa de entrega",
+		"img": "malu.jpg"
 	},
 	{
 		"nome": "Só Excursão Viagens e Turismo",
