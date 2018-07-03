@@ -98,12 +98,6 @@
 		"img": "top.jpg"
 	},
 	{
-		"nome": "Fantasia e Festas",
-		"id": "ff",
-		"desc": "10% de desconto na locação das fantasias. ",
-		"img": "ff.jpg"
-	},
-	{
 		"nome": "Barbearia Alternativa",
 		"id": "barb",
 		"desc": "10% de desconto no valor dos cortes de cabelo.",
