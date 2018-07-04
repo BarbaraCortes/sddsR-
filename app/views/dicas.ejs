@@ -11,9 +11,9 @@
 				text-align: justify;
 			}
 			.img-logo {
-				max-width: 100%; 
+				max-width: 33%; 
 				height: auto;
-				margin: 15px;
+				margin: 20px;
 			}
 			.content{
 			    position: relative;
@@ -40,21 +40,21 @@
 			<div class="row">
 				<div class = "col-md-4 col-sm-4">
 					<center>
-						<a href="#aplicativos"><img src="like.png" style = "max-width: 33%; height: auto; margin: 20px" class = "img-logo"></a>
+						<a href="#aplicativos"><img src="like.png" class = "img-logo"></a>
 					</center>
 					<br>
 					<h3 style="text-align: center"> Aplicativos </h3>
 				</div>
 				<div class = "col-md-4 col-sm-4">
 					<center> 
-						<a href = "#videos"><img src="youtube.png" style = "max-width: 33%; height: auto; margin: 20px" class = "img-logo"></a>
+						<a href = "#videos"><img src="youtube.png" class = "img-logo"></a>
 					</center>
 					<br>
 					<h3 style="text-align: center"> Vídeos </h3>
 				</div>
 				<div class = "col-md-4 col-sm-4">
 					<center> 
-						<a href="#restaurantes"><img src="restaurante.png" style = "max-width: 33%; height: auto; margin: 20px" class = "img-logo"></a>
+						<a href="#restaurantes"><img src="restaurante.png" class = "img-logo"></a>
 					</center>
 					<br>
 					<h3 style="text-align: center"> Restaurantes </h3>
@@ -113,7 +113,7 @@
 		<br>
 
 		<!-- Sessao de restaurantes -->
-		<div class="container-fluid" style="id="restaurantes">
+		<div class="container-fluid" id="restaurantes">
 			<h3 style = "margin-left: 50px"> Restaurantes </h3>
 		</div>
 		<div class = "container-fluid slides_rest" style="background: #FFFFFF; width:96%; height: 230px" >
@@ -129,10 +129,10 @@
 						<h4 style = "margin: 10px; margin-top: 60px"> <%= restaurantes[i].desc %> </h4>
 					</div>
 					<div class = "col-md-3 col-sm-3">
-					<a href='<%= restaurantes[i].face_link %>'><img alt='Pagina do Facebook' src='http://www.tenhomaisdiscosqueamigos.com/wp-content/uploads/2015/07/facebook.jpg' style = "width: 40%;position:absolute; left:15%; margin-top:70px;" /> </a>
+						<a href='<%= restaurantes[i].face_link %>'><img alt='Pagina do Facebook' src='http://www.tenhomaisdiscosqueamigos.com/wp-content/uploads/2015/07/facebook.jpg' style = "width: 40%;position:absolute; left:15%; margin-top:70px;" /> </a>
 					</div>
 					<div class = "col-md-3 col-sm-3">
-					<a href='<%= restaurantes[i].ifood_link %>'><img alt='Link do Ifood' src='https://images-na.ssl-images-amazon.com/images/I/51b3GBnw0UL.png' style = "width: 30%;position:absolute; left:80%; margin-top:55px;"/> </a>
+						<a href='<%= restaurantes[i].ifood_link %>'><img alt='Link do Ifood' src='https://images-na.ssl-images-amazon.com/images/I/51b3GBnw0UL.png' style = "width: 30%;position:absolute; left:80%; margin-top:55px;"/> </a>
 					</div>
 				</div>
 			<%}%>
