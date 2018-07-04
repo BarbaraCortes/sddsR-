@@ -61,7 +61,22 @@ app.get('/dicas', function(req, res) {
 	res.render('dicas', {apps: aplicativos, videos: videos, restaurantes: restaurantes});
 });
 app.get('/bolsasauxilio', function(req, res) {
-	res.render('bolsasauxilio', {bolsas_usp: bolsas_usp, bolsas_ufscar: bolsas_ufscar, bolsas_ifsp: bolsas_ifsp, bolsas_ic: bolsas_ic, bolsas_intercambio: bolsas_intercambio});
+	res.render('bolsasauxilio', {aba: "usp", bolsas_usp: bolsas_usp, bolsas_ufscar: bolsas_ufscar, bolsas_ifsp: bolsas_ifsp, bolsas_ic: bolsas_ic, bolsas_intercambio: bolsas_intercambio});
+});
+app.get('/bolsasauxilio_usp', function(req, res) {
+	res.render('bolsasauxilio', {aba: "usp", bolsas_usp: bolsas_usp, bolsas_ufscar: bolsas_ufscar, bolsas_ifsp: bolsas_ifsp, bolsas_ic: bolsas_ic, bolsas_intercambio: bolsas_intercambio});
+});
+app.get('/bolsasauxilio_ufscar', function(req, res) {
+	res.render('bolsasauxilio', {aba: "ufscar", bolsas_usp: bolsas_usp, bolsas_ufscar: bolsas_ufscar, bolsas_ifsp: bolsas_ifsp, bolsas_ic: bolsas_ic, bolsas_intercambio: bolsas_intercambio});
+});
+app.get('/bolsasauxilio_ifsp', function(req, res) {
+	res.render('bolsasauxilio', {aba: "ifsp", bolsas_usp: bolsas_usp, bolsas_ufscar: bolsas_ufscar, bolsas_ifsp: bolsas_ifsp, bolsas_ic: bolsas_ic, bolsas_intercambio: bolsas_intercambio});
+});
+app.get('/bolsasauxilio_ic', function(req, res) {
+	res.render('bolsasauxilio', {aba: "ic", bolsas_usp: bolsas_usp, bolsas_ufscar: bolsas_ufscar, bolsas_ifsp: bolsas_ifsp, bolsas_ic: bolsas_ic, bolsas_intercambio: bolsas_intercambio});
+});
+app.get('/bolsasauxilio_intercambio', function(req, res) {
+	res.render('bolsasauxilio', {aba: "intercambio", bolsas_usp: bolsas_usp, bolsas_ufscar: bolsas_ufscar, bolsas_ifsp: bolsas_ifsp, bolsas_ic: bolsas_ic, bolsas_intercambio: bolsas_intercambio});
 });
 app.get('/associacoes', function(req, res) {
 	res.render('associacoes', {sociocaaso: sociocaaso, sociofederal: sociofederal, socioatleticaaso: socioatleticaaso});
