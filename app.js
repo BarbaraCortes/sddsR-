@@ -14,39 +14,39 @@ app.listen(3000, function() {
 var fs = require("fs");
 
 /* JSONS dos slides */
-var contents = fs.readFileSync("aplicativos.json");
+var contents = fs.readFileSync("data/aplicativos.json");
 var aplicativos = JSON.parse(contents);
 
-contents = fs.readFileSync("videos.json");
+contents = fs.readFileSync("data/videos.json");
 var videos = JSON.parse(contents);
 
-contents = fs.readFileSync("restaurantes.json");
+contents = fs.readFileSync("data/restaurantes.json");
 var restaurantes = JSON.parse(contents);
 
-contents = fs.readFileSync("sociocaaso.json");
+contents = fs.readFileSync("data/sociocaaso.json");
 var sociocaaso = JSON.parse(contents);
 
-contents = fs.readFileSync("sociofederal.json");
+contents = fs.readFileSync("data/sociofederal.json");
 var sociofederal = JSON.parse(contents);
 
 /* JSONS das bolsas */
-contents = fs.readFileSync("bolsas_usp.json");
+contents = fs.readFileSync("data/bolsas_usp.json");
 var bolsas_usp = JSON.parse(contents);
 
-contents = fs.readFileSync("bolsas_ufscar.json");
+contents = fs.readFileSync("data/bolsas_ufscar.json");
 var bolsas_ufscar = JSON.parse(contents);
 
-contents = fs.readFileSync("bolsas_ifsp.json");
+contents = fs.readFileSync("data/bolsas_ifsp.json");
 var bolsas_ifsp = JSON.parse(contents);
 
-contents = fs.readFileSync("bolsas_ic.json");
+contents = fs.readFileSync("data/bolsas_ic.json");
 var bolsas_ic = JSON.parse(contents);
 
-contents = fs.readFileSync("bolsas_intercambio.json");
+contents = fs.readFileSync("data/bolsas_intercambio.json");
 var bolsas_intercambio = JSON.parse(contents);
 
 
-contents = fs.readFileSync("socioatleticaaso.json");
+contents = fs.readFileSync("data/socioatleticaaso.json");
 var socioatleticaaso = JSON.parse(contents);
 
 /* Se uma requisicao get no diretorio '/' for recebida, renderiza a index.ejs (pagina inicial) */
