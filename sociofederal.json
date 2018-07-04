@@ -183,6 +183,18 @@
 		"img": "king.jpg"
 	},
 	{
+		"nome": "Academia Territorio Fit",
+		"id": "territoriofit",
+		"desc": "10% de desconto + isenção da taxa de matrícula e exame médico",
+		"img": "tfit.jpg"
+	}, 
+	{
+		"nome": "King Muay Thai",
+		"id": "king",
+		"desc": "15% de desconto + isenção de matrícula no muay thai e 5,00 na mensalidade de boxe e kung fu",
+		"img": "king.jpg"
+	},
+	{
 		"nome": "Studio 77",
 		"id": "77",
 		"desc": "20% de desconto",

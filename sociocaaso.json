@@ -198,6 +198,12 @@
 		"id": "interlagos",
 		"desc": "10% de desconto",
 		"img": "interlagos.png"
+	},
+	{
+		"nome": "Auto Escola Interlagos",
+		"id": "interlagos",
+		"desc": "10% de desconto",
+		"img": "interlagos.png"
 	}, 
 	{
 		"nome": "Ma-lu Mania Pet Shop",
