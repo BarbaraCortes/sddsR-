@@ -25,7 +25,7 @@
 		</div>
 
 		<!-- Sessao de icones -->
-		<div class = "container">
+		<div class = "container" style = "width: 100%; background-color: #EEEEEE; border-bottom: solid #888888 1px">
 			<br>
 			<div class="row">
 				<div class = "col-md-4 col-sm-4">
@@ -53,121 +53,123 @@
 		</div>
 		<br>
 
-		<!-- Sessao do socio caaso -->
-		<div class = "container-fluid" id = "sociocaaso">
-			<h2 style = "margin-left: 50px"> Sócio Caaso </h2>
-			<div>
-				<h3 style="margin-left: 100px; margin-right: 100px">Descrição</h3>
-				<div class = "col-md-offset-1 col-md-4 col-sm-offset-1 col-sm-4">
-					<p>
-						O Sócio Caaso é uma ótima maneira de conseguir descontos em festas, estabelecimentos, produtos e ainda poder fazer uso do Salão de Jogos e da BiblioteCAASO. É uma associação anual e pode ser adquirida por alunos e ex-alunos do CAASO.
-					</p>
-				</div>
-				<div class = "col-md-offset-2 col-md-4 col-sm-offset-2 col-sm-4">
-					<p>
-						Graduação: R$40,00<br>
-						Alojamento: R$20,00<br>
-						Pós Graduação: R$45,00<br>
-						Ex-Alunos: R$60,00
-					</p>
-				</div>
-			</div>
-		</div>
-		<div class="container-fluid slides_sociocaaso" style="background: #FFFFFF; width:96%; height: 230px; margin-top: 20px">
-				<% for(var i = 0; i < sociocaaso.length; ++i) {%>
-					<% if (i % 3 != 2) {%> 
-						<div style = "border-right: double"> 
-					<%} else {%>
-						<div>
-					<%}%>
-						<div class = "col-md-6 col-sm-6">
-							<img src = "<%= sociocaaso[i].img %>" style="width: 80%; max-width: 150px; height: auto; margin-top: 30px; margin-left: 30px">
-						</div>
-						<div class = "col-md-6 col-sm-6" style="text-align: center; margin-top: 30px">
-							<h4><%= sociocaaso[i].nome %></h4>
-							<p><%= sociocaaso[i].desc %></p>
-						</div>
+		<div class = "container-fluid">
+			<!-- Sessao do socio caaso -->
+			<div class = "container-fluid" id = "sociocaaso">
+				<h2 style = "margin-left: 50px"> Sócio Caaso </h2>
+				<div>
+					<h3 style="margin-left: 100px; margin-right: 100px">Descrição</h3>
+					<div class = "col-md-offset-1 col-md-4 col-sm-offset-1 col-sm-4">
+						<p>
+							O Sócio Caaso é uma ótima maneira de conseguir descontos em festas, estabelecimentos, produtos e ainda poder fazer uso do Salão de Jogos e da BiblioteCAASO. É uma associação anual e pode ser adquirida por alunos e ex-alunos do CAASO.
+						</p>
 					</div>
-				<%}%>
-		</div>
-		<br>
-		<br>
-
-		<!-- Sessao do socio federal -->
-		<div class = "container-fluid" id = "sociofederal">
-			<h2 style = "margin-left: 50px"> Sócio Federal </h2>
-			<div>
-				<h3 style="margin-left: 100px; margin-right: 100px">Descrição</h3>
-				<div class = "col-md-offset-1 col-md-4 col-sm-offset-1 col-sm-4">
-					<p>
-						Sócio Federal é o programa de fidelidade do UFSCar. Aqui você terá acesso a todas as vantagens que o Sócio Federal te proporciona! Essa associação é anual e pode ser adquirida por alunos e ex-alunos da UFSCar.
-					</p>
-				</div>
-				<div class = "col-md-offset-2 col-md-4 col-sm-offset-2 col-sm-4">
-					<p>
-						Graduação: R$40,00<br>
-						Alojamento: R$20,00<br>
-						Pós Graduação: R$45,00<br>
-						Ex-Alunos: R$60,00
-					</p>
+					<div class = "col-md-offset-2 col-md-4 col-sm-offset-2 col-sm-4">
+						<p>
+							Graduação: R$40,00<br>
+							Alojamento: R$20,00<br>
+							Pós Graduação: R$45,00<br>
+							Ex-Alunos: R$60,00
+						</p>
+					</div>
 				</div>
 			</div>
-		</div>
-		<div class="container-fluid slides_sociofederal" style="background: #FFFFFF; width:96%; margin-top: 20px; height: 230px">
-				<% for(var i = 0; i < sociofederal.length; ++i) {%>
-					<% if(i % 3 != 2) {%> 
-						<div style = "border-right: double; "> 
-					<%} else { %>
+			<div class="container-fluid slides_sociocaaso" style="background: #FFFFFF; width:96%; height: 230px; margin-top: 20px">
+					<% for(var i = 0; i < sociocaaso.length; ++i) {%>
+						<% if (i % 3 != 2) {%> 
+							<div style = "border-right: double"> 
+						<%} else {%>
+							<div>
+						<%}%>
+							<div class = "col-md-6 col-sm-6">
+								<img src = "<%= sociocaaso[i].img %>" style="width: 80%; max-width: 150px; height: auto; margin-top: 30px; margin-left: 30px">
+							</div>
+							<div class = "col-md-6 col-sm-6" style="text-align: center; margin-top: 30px">
+								<h4><%= sociocaaso[i].nome %></h4>
+								<p><%= sociocaaso[i].desc %></p>
+							</div>
+						</div>
+					<%}%>
+			</div>
+			<br>
+			<br>
+
+			<!-- Sessao do socio federal -->
+			<div class = "container-fluid" id = "sociofederal">
+				<h2 style = "margin-left: 50px"> Sócio Federal </h2>
+				<div>
+					<h3 style="margin-left: 100px; margin-right: 100px">Descrição</h3>
+					<div class = "col-md-offset-1 col-md-4 col-sm-offset-1 col-sm-4">
+						<p>
+							Sócio Federal é o programa de fidelidade do UFSCar. Aqui você terá acesso a todas as vantagens que o Sócio Federal te proporciona! Essa associação é anual e pode ser adquirida por alunos e ex-alunos da UFSCar.
+						</p>
+					</div>
+					<div class = "col-md-offset-2 col-md-4 col-sm-offset-2 col-sm-4">
+						<p>
+							Graduação: R$40,00<br>
+							Alojamento: R$20,00<br>
+							Pós Graduação: R$45,00<br>
+							Ex-Alunos: R$60,00
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="container-fluid slides_sociofederal" style="background: #FFFFFF; width:96%; margin-top: 20px; height: 230px">
+					<% for(var i = 0; i < sociofederal.length; ++i) {%>
+						<% if(i % 3 != 2) {%> 
+							<div style = "border-right: double; "> 
+						<%} else { %>
+							<div> 
+						<%}%>
+							<div class = "col-md-6 col-sm-6">
+								<img src = "<%= sociofederal[i].img %>" style="width: 80%; max-width: 150px; height: auto; margin-top: 30px; margin-left: 30px">
+							</div>
+							<div class = "col-md-6 col-sm-6" style="text-align: center; margin-top: 30px">
+								<h4><%= sociofederal[i].nome %></h4>
+								<p><%= sociofederal[i].desc %></p>
+							</div>
+						</div>
+					<%}%>
+			</div>
+			<br>
+			<br>
+
+			<!-- Sessao do socio atletica caaso -->
+			<div id = "socioatleticaaso">
+				<h2 style = "margin-left: 50px"> Sócio Atlética Caaso </h2>
+				<div class = "container-fluid">
+					<h3 style="margin-left: 100px; margin-right: 100px">Descrição</h3>
+					<div class = "col-md-offset-1 col-md-4 col-sm-offset-1 col-sm-4">
+						<p>
+							Sócio Atlética Caaso é uma ótima opção para quem é fã de vestir o amarelo para torcer pelos times do Caaso. A anuidade dá direito a vantagens e descontos em produtos e festas organizados pela Atlética Caaso, além de benefícios com os estabelecimentos parceiros. Essa associação é anual e assessível a todos.
+						</p>
+					</div>
+					<div class = "col-md-offset-2 col-md-4 col-sm-offset-2 col-sm-4">
+						<p>
+							Novos sócios: R$30,00 <br>
+							Renovação: R$25,00
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="container-fluid slides_socioatleticaaso" style="width:96%; background: #FFFFFF; margin-top: 20px; height: 230px">
+				
+				<% for(var i = 0; i < socioatleticaaso.length; ++i) {%>
+					<% if (i % 3 != 2) { %>
+						<div style="border-right: double"> 
+					<%} else {%>
 						<div> 
 					<%}%>
-						<div class = "col-md-6 col-sm-6">
-							<img src = "<%= sociofederal[i].img %>" style="width: 80%; max-width: 150px; height: auto; margin-top: 30px; margin-left: 30px">
+						<div class = "col-md-6 col-sm-6" style="margin-top: 30px">
+							<img src = "<%= socioatleticaaso[i].img %>" style="width: 80%; max-width: 150px; height: auto; margin-left: 15px">
 						</div>
 						<div class = "col-md-6 col-sm-6" style="text-align: center; margin-top: 30px">
-							<h4><%= sociofederal[i].nome %></h4>
-							<p><%= sociofederal[i].desc %></p>
+							<h4><%= socioatleticaaso[i].nome %></h4>
+							<p><%= socioatleticaaso[i].desc %></p>
 						</div>
 					</div>
 				<%}%>
-		</div>
-		<br>
-		<br>
-
-		<!-- Sessao do socio atletica caaso -->
-		<div id = "socioatleticaaso">
-			<h2 style = "margin-left: 50px"> Sócio Atlética Caaso </h2>
-			<div class = "container-fluid">
-				<h3 style="margin-left: 100px; margin-right: 100px">Descrição</h3>
-				<div class = "col-md-offset-1 col-md-4 col-sm-offset-1 col-sm-4">
-					<p>
-						Sócio Atlética Caaso é uma ótima opção para quem é fã de vestir o amarelo para torcer pelos times do Caaso. A anuidade dá direito a vantagens e descontos em produtos e festas organizados pela Atlética Caaso, além de benefícios com os estabelecimentos parceiros. Essa associação é anual e assessível a todos.
-					</p>
-				</div>
-				<div class = "col-md-offset-2 col-md-4 col-sm-offset-2 col-sm-4">
-					<p>
-						Novos sócios: R$30,00 <br>
-						Renovação: R$25,00
-					</p>
-				</div>
 			</div>
-		</div>
-		<div class="container-fluid slides_socioatleticaaso" style="width:96%; background: #FFFFFF; margin-top: 20px; height: 230px">
-			
-			<% for(var i = 0; i < socioatleticaaso.length; ++i) {%>
-				<% if (i % 3 != 2) { %>
-					<div style="border-right: double"> 
-				<%} else {%>
-					<div> 
-				<%}%>
-					<div class = "col-md-6 col-sm-6" style="margin-top: 30px">
-						<img src = "<%= socioatleticaaso[i].img %>" style="width: 80%; max-width: 150px; height: auto; margin-left: 15px">
-					</div>
-					<div class = "col-md-6 col-sm-6" style="text-align: center; margin-top: 30px">
-						<h4><%= socioatleticaaso[i].nome %></h4>
-						<p><%= socioatleticaaso[i].desc %></p>
-					</div>
-				</div>
-			<%}%>
 		</div>
  
 
