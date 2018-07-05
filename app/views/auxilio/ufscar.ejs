@@ -1,0 +1,23 @@
+<!-- Bolsas da UFSCAR -->
+<div class = "bolsas" id = "ufscar">
+	<h2> UFSCAR </h2>
+	<% for(var i = 0; i < bolsas_ufscar.length; ++i) { %>
+		<hr style = "border-color: #888888">
+		<div class = "post">
+			<h3> <%- bolsas_ufscar[i].titulo %> </h3>
+			<p> <%- bolsas_ufscar[i].desc %> </p>
+			<%if(bolsas_ufscar[i].bullets.length > 0) {%>
+				<br>
+				<lu>
+					<% for(var j = 0; j < bolsas_ufscar[i].bullets.length; ++j) {%>
+						<li> <%- bolsas_ufscar[i].bullets[j] %> </li>
+					<%}%>
+				</lu>
+			<%}%>
+			<br><br>
+			<i style="font-size: 12pt"> Mais informações: <a href="google.com"> <%-bolsas_ufscar[i].link%> </a> </i> <br>
+			<i style="font-size: 12pt"> Última atualização: <%-bolsas_ufscar[i].atualizado%>  </i>
+		</div>
+	<%}%>
+	<br>
+</div>
