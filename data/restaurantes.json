@@ -26,12 +26,20 @@
 		"face_link": "https://www.facebook.com/pg/santacomidaoficial/about/?ref=page_internal"
 	},
 	{
+		"name": "Marmitaria da Esquina",
+		"desc": "Marmitaria e Rotisserie, que oferece comidas caseiras com cardápio que varia durante a semana ", 
+		"valores": "Classificado como $ pela própria página do facebook",
+		"infos": "Delivery das 11hs às 14hs, exceto aos domingos<br>Telefones : 3413-5653 / Delivery por WhatsApp: (Claro) 99343-6036 / (Vivo) 99722-1144<br>Endereço:João Leopoldino, 351 <br>Atualizado em: 5 de julho de 2018",
+		"img": "esquina.jpg",
+		"face_link": "https://www.facebook.com/Marmitaria-da-Esquina-1151974428199616/"
+	},
+	{
 		"name": "Batata Show",
 		"desc": "Batata Show é um restaurante especializado em batatas recheadas e oferece serviço de entrega em domicílio",  
 		"valores": "As batatas recheadas são oferecidas com preços aproximados a R$15,00<br>Tamanhos: P - 500g, M - 750g, G - 1kg ",
 		"infos": "Todos os dias das 18hs às 23h40<br>Disk 3361-5520 WhatsApp: 99354-6169<br>Endereço:Rua Antonio Blanco, 1342 - Vila São José<br>Atualizado em: 5 de julho de 2018",
 		"img": "bshow.jpg",
-		"face_link": "https://www.batatashow.com.br"
+		"link": "https://www.batatashow.com.br"
 	},
 	{
 		"name": "Lanche bom Lanchonete e Pizzaria",
