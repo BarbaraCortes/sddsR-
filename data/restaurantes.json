@@ -1,15 +1,63 @@
 [
 	{
 		"name": "Macarronato",
-		"desc": "Macarronato é um restaurante que serve macarrao na chapa, escondidinho, arroz cremoso, etc com ingredientes a escolha por um preço acessivel e fica de portas abertas das 11hs as 23hs",
+		"desc": "Macarronato é um restaurante que serve macarrão na chapa, escondidinho, arroz cremoso, etc com ingredientes à escolha por um preço acessivel e fica de portas abertas das 11hs as 23hs",
+
+		"valores": " ",
+		"infos": "Delivery das 11hs às 23hs<br>Telefone: 3412-4111<br>Endereço:Avenida São Carlos, 3010 - Centro<br>Atualizado em: 5 de julho de 2018",
 		"img": "https://static-images.ifood.com.br/image/upload/f_auto,t_low/logosgde/201708041051_44d7da15-b5e9-420b-907c-dbeb33c8a1bd.png",
 		"face_link": "https://www.facebook.com/macarronato/",
 		"ifood_link": "https://www.ifood.com.br/delivery/sao-carlos-sp/macarronato-centro?gclid=Cj0KCQjwx43ZBRCeARIsANzpzb9IafNeN6qZ25WiavaRj-2yhlMVEtPtkrncORAFVxm4zl7Usidj0SQaAhjXEALw_wcB"
 	},
 	{
 		"name": "Nobre Restaurante",
-		"desc": "Nobre Restaurante conta com um buffet coma a vontade por apenas R$10,00",
+		"desc": "Nobre Restaurante conta com um buffet de comida caseira geralmente com duas opções de carne e algumas opções de acompanhamentos e salada. O cardápio varia todos os dias.", 
+		"valores": "Buffet à vontade por R$10,00",
+		"infos": "Funciona das 11hs às 15hs, exceto domingos, incluindo serviço de entrega <br>Telefone: 3419-4030<br>Endereço:Rua Dona Alexandrina, 1806 <br>Atualizado em: 5 de julho de 2018",
 		"img": "nobre.jpg",
 		"face_link": "https://www.facebook.com/Nobre-Restaurante-413024512453670/"
+	},
+	{
+		"name": "Santa Comida",
+		"desc": "Marmitex, Kit para a família e almoço executivo - servimos almoço e jantar.  ", 
+		"valores": "Valores das marmitex: <br> Pequena R$13 / Média R$15 / Grande R$17",
+		"infos": "Delivery das 10h30 às 14hs<br>Telefones : 3419-7273 / 3116-6550 / WhatsApp: 99774-1856<br>Endereço:Rua Major Jose Inácio Nº 2536 - Centro<br>Atualizado em: 5 de julho de 2018",
+		"img": "santacomida.jpg",
+		"face_link": "https://www.facebook.com/pg/santacomidaoficial/about/?ref=page_internal"
+	},
+	{
+		"name": "Marmitaria da Esquina",
+		"desc": "Marmitaria e Rotisserie, que oferece comidas caseiras com cardápio que varia durante a semana ", 
+		"valores": "Classificado como $ pela própria página do facebook",
+		"infos": "Delivery das 11hs às 14hs, exceto aos domingos<br>Telefones : 3413-5653 / Delivery por WhatsApp: (Claro) 99343-6036 / (Vivo) 99722-1144<br>Endereço:João Leopoldino, 351 <br>Atualizado em: 5 de julho de 2018",
+		"img": "esquina.jpg",
+		"face_link": "https://www.facebook.com/Marmitaria-da-Esquina-1151974428199616/"
+	},
+	{
+		"name": "Batata Show",
+		"desc": "Batata Show é um restaurante especializado em batatas recheadas e oferece serviço de entrega em domicílio",  
+		"valores": "As batatas recheadas são oferecidas com preços aproximados a R$15,00<br>Tamanhos: P - 500g, M - 750g, G - 1kg ",
+		"infos": "Todos os dias das 18hs às 23h40<br>Disk 3361-5520 WhatsApp: 99354-6169<br>Endereço:Rua Antonio Blanco, 1342 - Vila São José<br>Atualizado em: 5 de julho de 2018",
+		"img": "bshow.jpg",
+		"link": "https://www.batatashow.com.br"
+	},
+	{
+		"name": "Lanche bom Lanchonete e Pizzaria",
+		"desc": "A lanchonete Lanche Bom serve pizzas fartas de recheio a um preço acessível, além de lanches, pastéis e cachorro-quentes ",
+		"valores": "Os valores variam em torno de R$ 40,00 para as pizzas, R$ 15,00 para os lanches, R$ 12,00 para os cachorro-quentes, R$ 6,00 para os pastéis ",
+		"infos": "Todos os dias das 18hs às 23h40<br>Delivery 3372-5762 / 99374-9773 / 99786-8359<br>Endereço:Rua Dr. Carlos de Camargo Salles 416 - Em frente ao Colégio CAASO<br>Atualizado em: 5 de julho de 2018", 
+		"img": "podrao.png",
+		"face_link": "https://www.facebook.com/pages/biz/pizza_place-13560-550/Lanche-Bom-Lanchonete-e-Pizzaria-661724947202152/",
+		"ifood_link":"http://lanchebomepizzaria.com.br"
+
+	},
+	{
+		"name": "Ravenna Pizzaria",
+		"desc": "A pizzaria Ravenna oferece rodízios por cerca de R$29,90 por pessoa e conta com promoções especiais como Música ao vivo todas as terças sem a cobrança de couvert artístico e benefícios em datas festivas", 
+		"infos": "Todos os dias das 18h30 às 23hs<br>Delivery: Santa Paula: 3371-0720 / 3376-2584 - Castelo Branco: 3368-4605 / 3368-4576 - Santa Felícia: 3374-1817 / 3374-1823<br>Endereço:Rua Bernardino de Campos, 1703 - Vila Prado<br>Atualizado em: 5 de julho de 2018", 
+		"img": "ravenna.png",
+		"face_link": "https://www.facebook.com/ravenna.pizzaria/",
+		"ifood_link":"https://www.ifood.com.br/delivery/sao-carlos-sp/ravenna-pizzaria-jardim-santa-paula?gclid=CjwKCAjwg_fZBRAoEiwAppvp-W5_zKVuyLRkZE5uBTKt3qJ-SCzutRpfQvjT5tCHDMD16D7Olcu5VhoCZ6IQAvD_BwE"
+
 	}
 ]

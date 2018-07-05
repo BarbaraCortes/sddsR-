@@ -2,14 +2,29 @@
 	<head>
 		<%-include bootstrap.ejs %> <!-- inclui o bootstrap -->
 		<style type="text/css">
+			html, body {
+				height: 100%;
+			}
+
 			body {
 				background-color: #DDDDDD;
 				text-align: justify;
+				display: flex;
+				flex-direction: column;
 			}
 
-			.img-cartaopostal {
+			.content {
+				flex: 1 0 auto;
+			}
 
-				/*border: solid 1px black;*/
+			.footer {
+				flex-shrink: 0;
+			}
+
+			.img-logo {
+				max-width: 100%; 
+				height: auto;
+				margin: 15px;
 			}
 
 			#img-logo {
@@ -21,6 +36,7 @@
 		<title> Transporte </title>
 	</head>
 	<body>
+		<div class = "content">
 			<div id="fb-root"></div>
 			<script>(function(d, s, id) {
 				var js, fjs = d.getElementsByTagName(s)[0];
@@ -32,7 +48,7 @@
 			
 			<%-include navbar.ejs%>
 			<div id="img" style = "width: 100%;">
-				<img src="barra.jpg" style = "max-width: 100%; height: auto;" class = "img-cartaopostal">
+				<img src="barra.jpg" style = "max-width: 100%; height: auto;">
 			</div>
 			<!-- Sessao de icones -->
 			<div class = "container">
@@ -92,28 +108,26 @@
 				<br>
 				<h3 style = "margin-left: 100px"> Ônibus </h3>
 				<div class="row" id="onibus">
-					<div class = "col-md-offset-1 col-md-3">
-						<p><h4> É garantido pela ARTESP 50% de desconto no preço da passagem de ônibus intermunicipais para o estado de São Paulo para estudantes de educação básica, ensinos fundamental e médio e de curso superior de graduação. </p>
+					<div class = "col-md-offset-1 col-md-3 col-sm-offset-1 col-sm-3">
+						<p><h4> É garantido pela ARTESP 50% de desconto no preço da passagem de ônibus intermunicipais para o estado de São Paulo para estudantes de educação básica, ensinos fundamental e médio e de curso superior de graduação. </h4></p>
 					</div>
-					<div class = "col-md-3">
+					<div class = "col-md-3 col-sm-3">
 						<h4><p> Para conseguir sua carteira de estudante, basta comparecer no guichê na <a href = "https://goo.gl/maps/BrzTnEkBiTx" style = "color: #0F7513">rodoviária</a> da empresa de ônibus que faz o transporte até sua cidade, preencher o formulário, levar os documentos necessários e pagar uma taxa. </h4></p>
 						<br>
 					</div>
-					<div class = "col-md-3"> 
+					<div class = "col-md-3 col-sm-3"> 
 						<h4><p>Mais dúvidas podem ser tiradas no site das empresas: </p>
-						<ul>
-							<li><a href="http://www.empresacruz.com.br/pagina-90-como-solicitar-carteira-escolar.html" style = "color: #0F7513">Empresa Cruz</a></li>
-							<li><a href="http://www.viacaocometa.com.br/tire-sua-duvida/" style = "color: #0F7513">Viação Cometa</a></li>
-							<li><a href="http://www.vbtransportes.com.br/servicos/pedidos-de-passe/rodoviario/" style = "color: #0F7513">VB Transportes</a></li>
-						</ul>
+							<ul>
+								<li><a href="http://www.empresacruz.com.br/pagina-90-como-solicitar-carteira-escolar.html" style = "color: #0F7513">Empresa Cruz</a></li>
+								<li><a href="http://www.viacaocometa.com.br/tire-sua-duvida/" style = "color: #0F7513">Viação Cometa</a></li>
+								<li><a href="http://www.vbtransportes.com.br/servicos/pedidos-de-passe/rodoviario/" style = "color: #0F7513">VB Transportes</a></li>
+							</ul>
 						</h4>
 					</div>
    				</div>
    				<br>
   			</div>
-
-			<%- include footer.ejs %>
-<!-- 		</
-		</div> -->
+  		</div>
+		<%- include footer.ejs %>
 	</body>
 </html>

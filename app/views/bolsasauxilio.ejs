@@ -2,21 +2,29 @@
 	<head>
 		<%-include bootstrap.ejs %> <!-- inclui o bootstrap -->
 		<style type="text/css">
+			html, body {
+				height: 100%;
+			}
+
 			body {
 				background-color: #DDDDDD;
 				text-align: justify;
+				display: flex;
+				flex-direction: column;
 			}
 
-			.img-cartaopostal {
+			.content {
+				flex: 1 0 auto;
+			}
 
-				/*border: solid 1px black;*/
+			.footer {
+				flex-shrink: 0;
 			}
 
 			.img-logo {
-				max-width: 50%; 
+				max-width: 100%; 
 				height: auto;
-				margin: 20px;
-				cursor: pointer;
+				margin: 15px;
 			}
 
 			.post {
@@ -29,9 +37,10 @@
 		<title> Bolsas Auxílio </title>
 	</head>
 	<body>
+		<div class = "content">
 			<%-include navbar.ejs%>
 			<div id="img" style = "width: 100%;">
-				<img src="barra.jpg" style = "max-width: 100%; height: auto;" class = "img-cartaopostal">
+				<img src="barra.jpg" style = "max-width: 100%; height: auto;">
 			</div>
 			<!-- Sessao de icones -->
 			<div style = "background-color: #EEEEEE; border-bottom: solid #888888 1px">
@@ -102,7 +111,7 @@
 				<%}%>
 				
 			</div>
-
-			<%- include footer.ejs %>
+		</div>
+		<%- include footer.ejs %>
 	</body>
 </html>
