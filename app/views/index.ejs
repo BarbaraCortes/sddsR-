@@ -8,6 +8,20 @@
 				text-align: justify;
 				font-size: 20px;
 				font-family: "Gill Sans", sans-serif;
+				display: flex;
+				flex-direction: column;
+			}
+			
+			html, body {
+				height: 100%;
+			}
+
+			.content {
+				flex: 1 0 auto;
+			}
+
+			.footer {
+				flex-shrink: 0;
 			}
 
 			#img-logo {
@@ -19,6 +33,7 @@
 		<title> sdds R$ </title>
 	</head>
 	<body>
+		<div class = "content">
 			<%-include navbar.ejs%>
 			
 			<div id="img" style = "width: 100%;">
@@ -35,6 +50,7 @@
 					</div>
 				</div>	
 			</div>
-			<%- include footer.ejs %>
+		</div>
+		<%- include footer.ejs %>
 	</body>
 </html>
